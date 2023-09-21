@@ -1,0 +1,32 @@
+#app {
+  padding: 1.1rem;
+}
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.9rem;
+}
+.hero-img {
+  background-image: url("/src/imgs/hero-img-svg.svg");
+}
+.hero-heading {
+  margin: 1rem 0;
+  line-height: 3.9rem;
+  position: relative;
+}
+
+.highlight-blue {
+  background-color: $secondary-color;
+}
+
+.hero-description {
+  font-size: $fs-3xs;
+  font-weight: $fw-regular;
+  margin-bottom: 2rem;
+  padding: 0 6rem;
+}
+.hero-btns {
+  gap: 1.3rem;
+  margin-bottom: 4.7rem;
+}

@@ -5,11 +5,47 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Vite App</title>
   </head>
   <body>
     <div id="app">
-      <h1>Alpha</h1>
+      <header>
+        <nav class="navigation">
+          <h1 class="logo-mobile text-uppercase">Alpha</h1>
+          <div class="mobile-navigation">
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar bar-active"></div>
+              <div class="bar"></div>
+            </div>
+          </div>
+        </nav>
+        <ul class="menu">
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+        <img src="src/imgs/hero-img-svg.svg" alt="hero-img" />
+        <h1 class="heading-3 text-center hero-heading">
+          Car Repair and Maintenance
+          <div class="highlight highlight-blue"></div>
+        </h1>
+        <p class="hero-description text-center">
+          Get your car back on the road with our expert repair services. We’ll
+          solve your problem big or small.
+        </p>
+        <div class="hero-btns flex justify-center items-center">
+          <button class="btn btn-light">Book Now</button>
+          <button class="btn btn-outline">Contact Us</button>
+        </div>
+      </header>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

@@ -3,13 +3,13 @@
 - Create Folder Structure ✅
 
 - Create CSS Variables
-  -font family
-  -font weight
-  -font sizes
-  -primary color
-  -secondary color
+  -font family✅
+  -font weight✅
+  -font sizes✅
+  -primary color✅
+  -secondary color✅
 
-- Google Fonts
+- Google Fonts✅
 
 - Create Components classes
 

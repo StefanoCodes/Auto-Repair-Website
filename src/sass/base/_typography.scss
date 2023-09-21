@@ -1,0 +1,48 @@
+@import "../sass-utils/variables";
+
+.heading-1 {
+  font-size: $fs-xl;
+  font-weight: $fw-extra-bold;
+}
+
+.description {
+  font-size: $fs-sm;
+  font-weight: $fw-regular;
+}
+
+.logo {
+  font-size: $fs-l;
+  font-weight: $fw-bold;
+}
+
+.nav-link {
+  font-size: $fs-sm;
+  font-weight: $fw-medium;
+}
+
+.heading-3 {
+  font-size: $fs-md;
+  font-weight: $fw-extra-bold;
+}
+
+.service-description {
+  font-size: $fs-xs;
+  font-weight: $fw-regular;
+}
+
+.about-description {
+  font-size: $fs-md;
+  font-weight: $fw-regular;
+}
+.testimonials-name {
+  font-size: $fs-xs;
+  font-weight: $fw-extra-bold;
+}
+.footer-link {
+  color: $white;
+}
+
+.logo-mobile {
+  font-size: 2.8rem;
+  font-weight: $fw-bold;
+}

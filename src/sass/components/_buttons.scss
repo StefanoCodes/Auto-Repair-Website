@@ -1,0 +1,26 @@
+@import "../sass-utils/variables";
+
+.btn {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem 1.8rem;
+  font-size: $fs-base;
+  font-weight: $fw-extra-bold;
+}
+
+.btn-light {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.btn-outline {
+  border: 1px solid $black;
+  color: $black;
+  background-color: $white;
+}
+.btn-dark {
+  background-color: $secondary-color;
+  color: $white;
+}
