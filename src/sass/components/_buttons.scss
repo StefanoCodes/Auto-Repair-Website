@@ -8,11 +8,16 @@
   padding: 0.5rem 1.8rem;
   font-size: $fs-base;
   font-weight: $fw-extra-bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-light {
   background-color: $primary-color;
   color: $white;
+}
+.btn-light:hover {
+  opacity: 0.8;
 }
 
 .btn-outline {
@@ -22,5 +27,9 @@
 }
 .btn-dark {
   background-color: $secondary-color;
+  color: $white;
+}
+.btn-outline:hover {
+  background-color: #333;
   color: $white;
 }

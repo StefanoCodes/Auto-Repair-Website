@@ -21,7 +21,7 @@
 }
 
 .heading-3 {
-  font-size: $fs-md;
+  font-size: clamp($fs-md, 10vw, 4rem);
   font-weight: $fw-extra-bold;
 }
 

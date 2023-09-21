@@ -123,7 +123,7 @@ select {
 }
 
 .heading-3 {
-  font-size: 3.2rem;
+  font-size: clamp(3.2rem, 10vw, 4rem);
   font-weight: 800;
 }
 
@@ -159,11 +159,17 @@ select {
   padding: 0.5rem 1.8rem;
   font-size: 1.6rem;
   font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .btn-light {
   background-color: #ff8f81;
   color: #ffffff;
+}
+
+.btn-light:hover {
+  opacity: 0.8;
 }
 
 .btn-outline {
@@ -174,6 +180,11 @@ select {
 
 .btn-dark {
   background-color: #7d85b3;
+  color: #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: #333;
   color: #ffffff;
 }
 
@@ -194,7 +205,7 @@ select {
 }
 
 .hero-img {
-  background-image: url("/src/imgs/hero-img-svg.svg");
+  background: no-repeat;
 }
 
 .hero-heading {
@@ -247,7 +258,7 @@ select {
 
 .highlight {
   width: 1.6rem;
-  height: 20.8rem;
+  height: 35vh;
   transform: rotate(90deg);
   position: absolute;
   top: -3.6rem;
