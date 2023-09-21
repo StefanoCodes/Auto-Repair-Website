@@ -203,6 +203,10 @@ select {
   position: relative;
 }
 
+.hero-img {
+  margin: 0 auto;
+}
+
 .highlight-blue {
   background-color: #7d85b3;
 }
