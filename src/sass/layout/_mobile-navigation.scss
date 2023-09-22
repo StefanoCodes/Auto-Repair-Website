@@ -4,7 +4,6 @@
   z-index: 1000;
   background: white;
   padding: 1.1rem;
-  // box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .mobile-navigation {
@@ -13,16 +12,6 @@
     aspect-ratio: 1;
     width: 2.5rem;
     transition: all 0.5s;
-  }
-
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #000;
-    margin: 5px 0;
-  }
-  .bar-active {
-    background-color: $secondary-color;
   }
 }
 .menu {

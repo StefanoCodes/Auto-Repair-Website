@@ -261,15 +261,6 @@ select {
   width: 2.5rem;
   transition: all 0.5s;
 }
-.mobile-navigation .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #000;
-  margin: 5px 0;
-}
-.mobile-navigation .bar-active {
-  background-color: #7d85b3;
-}
 
 .menu {
   background-color: #ff8f81;
