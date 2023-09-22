@@ -38,6 +38,7 @@ body {
   text-rendering: optimizeSpeed;
   line-height: 1.6;
   font-family: $ff-inter;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
