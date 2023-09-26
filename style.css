@@ -143,6 +143,7 @@ select {
 
 .section-heading {
   font-size: clamp(3.2rem, 10vw, 4rem);
+  text-transform: uppercase;
 }
 
 .service-description {
@@ -231,8 +232,22 @@ select {
 }
 
 .hero-heading {
-  margin: 1rem 0;
-  line-height: 5rem;
+  display: inline-block;
+  margin: 1.5rem 0;
+  line-height: clamp(5rem, 8vw, 5.5rem);
+}
+.hero-heading span {
+  position: relative;
+}
+.hero-heading span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  background: #7d85b3;
+  bottom: 4px;
+  left: 0;
+  z-index: -1;
 }
 
 .hero-img {
@@ -295,6 +310,13 @@ select {
   color: #ffffff;
   font-size: 1.4rem;
 }
+.menu .contact__number {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-top: 1px solid #7d85b3;
+  padding-top: 2rem;
+}
 
 .menu.active {
   opacity: 1;
@@ -351,6 +373,24 @@ select {
 }
 .services .services__img {
   max-width: 30rem;
+}
+
+.about {
+  padding: 5.2rem 0;
+}
+.about__heading {
+  position: relative;
+  display: inline-block;
+}
+.about__heading::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 18px;
+  background: #ff8f81;
+  bottom: 10px;
+  left: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=style.css.map */

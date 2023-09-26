@@ -26,6 +26,7 @@
 }
 .section-heading {
   font-size: clamp($fs-md, 10vw, 4rem);
+  text-transform: uppercase;
 }
 
 .service-description {
