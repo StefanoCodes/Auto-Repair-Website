@@ -4,6 +4,11 @@
   margin: 0 auto;
 }
 
+.wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -132,8 +137,12 @@ select {
 }
 
 .heading-3 {
-  font-size: clamp(3.2rem, 10vw, 4rem);
+  font-size: clamp(3.2rem, 10vw, 4.5rem);
   font-weight: 800;
+}
+
+.section-heading {
+  font-size: clamp(3.2rem, 10vw, 4rem);
 }
 
 .service-description {
@@ -299,7 +308,6 @@ select {
   text-align: center;
 }
 .services__header {
-  font-size: 3.2rem;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -308,7 +316,7 @@ select {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   place-items: center;
-  gap: 10rem;
+  gap: 5rem;
 }
 .services__cards .services__card {
   padding: 0 6rem;
@@ -328,18 +336,21 @@ select {
   max-width: 6.4rem;
 }
 .services__cards .services__card-title {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #000000;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
 .services__cards .services__card-description {
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 8vw, 1.5rem);
   font-weight: 500;
 }
 .services__cards .services__card-btn {
   font-size: 1.5rem;
   margin-top: 1.7rem;
+}
+.services .services__img {
+  max-width: 30rem;
 }
 
 /*# sourceMappingURL=style.css.map */
