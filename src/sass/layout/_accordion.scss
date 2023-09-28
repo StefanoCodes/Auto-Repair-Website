@@ -1,0 +1,75 @@
+@import "../sass-utils/variables";
+.accordion {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background-color: $secondary-color;
+
+  &__heading {
+    display: inline-block;
+    margin: 5rem;
+  }
+  &__container {
+    box-shadow: $primary-color 5px 5px, $primary-color 8px 8px;
+    border-radius: 25px;
+    background-color: $white;
+  }
+  &__boxes {
+    padding: 2rem 0;
+    padding-left: 0.5rem;
+  }
+  &__box-headings {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__box-heading {
+    font-size: $fs-3xs;
+    font-weight: $fw-extra-bold;
+  }
+  &__box {
+    padding: 1.9rem 1.6rem;
+    transition: all 0.3s ease-in-out;
+  }
+  .plus {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 250ms ease-in-out;
+    .line {
+      display: inline-block;
+      background-color: $primary-color;
+    }
+    .line-vertical {
+      height: 10.5px;
+      border: 1px solid #0e1c4e;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .line-horizontal {
+      width: 10.5px;
+      border: 1.5px solid #0e1c4e;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &.active {
+      transform: rotate(45deg);
+      animation-name: rotate;
+      animation-duration: 0.7s;
+      animation-timing-function: ease-in;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
