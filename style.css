@@ -1,12 +1,7 @@
-.container {
-  padding: 0 2.4rem;
-  max-width: 100rem;
-  margin: 0 auto;
-}
-
 .wrapper {
   max-width: 500px;
   margin: 0 auto;
+  padding: 0 2.4rem;
 }
 
 .text-uppercase {
@@ -341,11 +336,13 @@ select {
   gap: 5rem;
 }
 .services__cards .services__card {
-  padding: 0 6rem;
+  padding: 3rem 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid #ffffff;
+  border-bottom-right-radius: 30%;
 }
 .services__cards .services__card-img-background {
   display: inline-block;

@@ -15,11 +15,13 @@
     place-items: center;
     gap: 5rem;
     .services__card {
-      padding: 0 6rem;
+      padding: 3rem 5rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      border: 2px solid $white;
+      border-bottom-right-radius: 30%;
       &-img-background {
         display: inline-block;
         background-color: $primary-color;

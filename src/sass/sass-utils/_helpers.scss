@@ -1,13 +1,15 @@
-.container {
-  padding: 0 2.4rem;
-  max-width: 100rem;
-  margin: 0 auto;
-}
 .wrapper {
   max-width: 500px;
   margin: 0 auto;
+  padding: 0 2.4rem;
   // @media screen and (min-width: 768px) {
-  //   max-width: 2000px;
+  //   max-width: 720px;
+  // }
+  // @media screen and (min-width: 992px) {
+  //   max-width: 960px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1140px;
   // }
 }
 .text-uppercase {
