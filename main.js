@@ -18,3 +18,21 @@ hamburgerToggle.addEventListener("click", toggleDrawer);
 navLinks.forEach((link) => {
   link.addEventListener("click", toggleDrawer);
 });
+
+// ACCORDION
+
+const accordionContainer = document.querySelector(".accordion__boxes");
+
+// Event Delegation
+accordionContainer.addEventListener("click", (e) => {
+  e.preventDefault();
+  const target = e.target.closest(".plus");
+  if (!target) return;
+  const parent = target.parentElement.parentElement;
+  const paragraphEl = parent.querySelector(".accordion__description");
+  const header = parent.querySelector(".accordion__box-heading");
+  parent.classList.toggle(`active`);
+  target.classList.toggle("active");
+  paragraphEl.classList.toggle("active");
+  header.classList.toggle("active");
+});
