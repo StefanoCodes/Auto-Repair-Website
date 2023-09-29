@@ -270,6 +270,7 @@ select {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
 .accordion .plus .line-horizontal {
   width: 10.5px;
@@ -278,12 +279,19 @@ select {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
 }
 .accordion .plus.active {
   transform: rotate(45deg);
   animation-name: rotate;
-  animation-duration: 250ms;
+  animation-duration: 0.3s;
   animation-timing-function: ease-in;
+}
+.accordion .plus.active .line-vertical {
+  border: 1px solid #f83f37;
+}
+.accordion .plus.active .line-horizontal {
+  border: 1px solid #f83f37;
 }
 
 @keyframes rotate {
