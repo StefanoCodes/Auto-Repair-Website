@@ -1,8 +1,5 @@
 @import "../sass-utils/variables";
-// TODO:
-// JS functionality
-//  add descriptions
-// add Typography to description
+
 .accordion {
   padding: 5.2rem 0;
   background-color: $secondary-color;
@@ -12,9 +9,6 @@
     margin-bottom: 2.5rem;
     color: $white;
     letter-spacing: 2px;
-  }
-  &__heading.active {
-    font-size: $fs-md;
   }
   &__container {
     box-shadow: $primary-color 5px 5px, $primary-color 8px 8px;
@@ -35,24 +29,40 @@
     font-weight: $fw-bold;
     transition: all 0.3s ease-in-out;
   }
-  &__box-heading.active {
-    font-size: $fs-2xs;
-    font-weight: $fw-extra-bold;
-  }
+
   &__box {
     padding: 1.9rem 1.6rem;
     transition: all 0.3s ease-in-out;
+    &.active {
+      .accordion__description {
+        max-height: 25rem;
+      }
+      .accordion__box-heading {
+        font-size: $fs-2xs;
+        font-weight: $fw-extra-bold;
+      }
+      .plus {
+        transform: rotate(45deg);
+        animation-name: rotate;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in;
+        .line-vertical {
+          border: 1px solid #f83f37;
+        }
+        .line-horizontal {
+          border: 1px solid #f83f37;
+        }
+      }
+    }
   }
   &__description {
     font-size: 1.4rem;
     padding-top: 1rem;
     max-height: 0px;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.35s ease-in-out;
     overflow: hidden;
   }
-  &__description.active {
-    max-height: 20rem;
-  }
+
   .plus {
     width: 30px;
     height: 30px;
@@ -80,19 +90,6 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all 0.3s ease-in-out;
-    }
-
-    &.active {
-      transform: rotate(45deg);
-      animation-name: rotate;
-      animation-duration: 0.3s;
-      animation-timing-function: ease-in;
-      .line-vertical {
-        border: 1px solid #f83f37;
-      }
-      .line-horizontal {
-        border: 1px solid #f83f37;
-      }
     }
   }
 }

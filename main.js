@@ -29,10 +29,5 @@ accordionContainer.addEventListener("click", (e) => {
   const target = e.target.closest(".plus");
   if (!target) return;
   const parent = target.parentElement.parentElement;
-  const paragraphEl = parent.querySelector(".accordion__description");
-  const header = parent.querySelector(".accordion__box-heading");
-  parent.classList.toggle(`active`);
-  target.classList.toggle("active");
-  paragraphEl.classList.toggle("active");
-  header.classList.toggle("active");
+  parent.classList.toggle("active");
 });

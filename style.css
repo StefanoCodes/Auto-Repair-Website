@@ -212,9 +212,6 @@ select {
   color: #ffffff;
   letter-spacing: 2px;
 }
-.accordion__heading.active {
-  font-size: 3.2rem;
-}
 .accordion__container {
   box-shadow: #ff8f81 5px 5px, #ff8f81 8px 8px;
   border-radius: 25px;
@@ -234,23 +231,35 @@ select {
   font-weight: 700;
   transition: all 0.3s ease-in-out;
 }
-.accordion__box-heading.active {
-  font-size: 1.8rem;
-  font-weight: 800;
-}
 .accordion__box {
   padding: 1.9rem 1.6rem;
   transition: all 0.3s ease-in-out;
+}
+.accordion__box.active .accordion__description {
+  max-height: 25rem;
+}
+.accordion__box.active .accordion__box-heading {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.accordion__box.active .plus {
+  transform: rotate(45deg);
+  animation-name: rotate;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+}
+.accordion__box.active .plus .line-vertical {
+  border: 1px solid #f83f37;
+}
+.accordion__box.active .plus .line-horizontal {
+  border: 1px solid #f83f37;
 }
 .accordion__description {
   font-size: 1.4rem;
   padding-top: 1rem;
   max-height: 0px;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.35s ease-in-out;
   overflow: hidden;
-}
-.accordion__description.active {
-  max-height: 20rem;
 }
 .accordion .plus {
   width: 30px;
@@ -280,18 +289,6 @@ select {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;
-}
-.accordion .plus.active {
-  transform: rotate(45deg);
-  animation-name: rotate;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-in;
-}
-.accordion .plus.active .line-vertical {
-  border: 1px solid #f83f37;
-}
-.accordion .plus.active .line-horizontal {
-  border: 1px solid #f83f37;
 }
 
 @keyframes rotate {
