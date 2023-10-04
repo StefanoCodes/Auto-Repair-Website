@@ -530,4 +530,9 @@ select {
   transform: translateY(-3px);
 }
 
+.testimonials {
+  background-color: #ff8f81;
+  padding: 5.2rem 0;
+}
+
 /*# sourceMappingURL=style.css.map */
