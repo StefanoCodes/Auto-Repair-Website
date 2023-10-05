@@ -534,5 +534,44 @@ select {
   background-color: #ff8f81;
   padding: 5.2rem 0;
 }
+.testimonials__box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 40rem;
+  margin-top: 3rem;
+}
+.testimonials__box-content {
+  text-align: center;
+  padding-top: 2rem;
+}
+.testimonials__box-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.testimonials__box p {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.testimonials__box-ratings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.testimonials__box-ratings .ratings__name {
+  font-size: 1.3rem;
+}
+.testimonials__box-ratings .ratings__stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -3,4 +3,44 @@
 .testimonials {
   background-color: $primary-color;
   padding: $section-padding;
+  &__box {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 40rem;
+    margin-top: 3rem;
+    &-content {
+      text-align: center;
+      padding-top: 2rem;
+    }
+    &-title {
+      font-size: $fs-2xs;
+      font-weight: $fw-extra-bold;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-weight: $fw-medium;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    &-ratings {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .ratings__name {
+        font-size: $fs-4xs;
+      }
+
+      .ratings__stars {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
 }
