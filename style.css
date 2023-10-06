@@ -584,7 +584,7 @@ select {
 .testimonials .slider-controls {
   display: flex;
   justify-content: center;
-  justify-content: center;
+  align-items: center;
   gap: 3rem;
 }
 .testimonials .slider-icon {
