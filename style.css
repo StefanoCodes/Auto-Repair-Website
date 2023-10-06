@@ -550,7 +550,7 @@ select {
   justify-content: space-between;
   align-items: center;
   min-height: 40rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   transition: transform 1s;
 }
 .testimonials__box-content {
@@ -585,7 +585,7 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1rem;
 }
 .testimonials .slider-icon {
   background: none;
