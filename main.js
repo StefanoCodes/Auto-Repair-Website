@@ -31,3 +31,49 @@ accordionContainer.addEventListener("click", (e) => {
   const parent = target.parentElement.parentElement;
   parent.classList.toggle("active");
 });
+
+///////////////////////////////////////
+// Slider
+const slider = function () {
+  const slides = document.querySelectorAll(".testimonials__box");
+  const btnLeft = document.querySelector(".slider-icon-left");
+  const btnRight = document.querySelector(".slider-icon-right");
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+  const goToSlide = function (slide) {
+    slides.forEach(
+      (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+    );
+  };
+  // Next slide
+  const nextSlide = function () {
+    clearInterval(automaticPlay);
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+    goToSlide(curSlide);
+  };
+
+  const prevSlide = function () {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+  };
+  goToSlide(0);
+
+  const automaticPlay = () => {
+    setInterval(nextSlide, 5000);
+  };
+  automaticPlay();
+
+  btnRight.addEventListener("click", nextSlide);
+  btnLeft.addEventListener("click", prevSlide);
+};
+slider();
