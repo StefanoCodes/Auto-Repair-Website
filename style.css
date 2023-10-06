@@ -588,12 +588,9 @@ select {
   gap: 3rem;
 }
 .testimonials .slider-icon {
+  background: none;
   z-index: 10;
   border: none;
-  background: rgba(255, 255, 255, 0.7);
-  font-family: inherit;
-  color: #333;
-  border-radius: 50%;
   height: 5.5rem;
   width: 5.5rem;
   font-size: 3.25rem;
@@ -601,8 +598,7 @@ select {
   cursor: pointer;
 }
 .testimonials .slider-icon:hover, .testimonials .slider-icon:active {
-  background-color: #333;
-  color: #ffffff;
+  opacity: 0.75;
 }
 
 .contact {
