@@ -375,6 +375,7 @@ select {
   aspect-ratio: 1;
   width: 2.5rem;
   transition: all 0.5s;
+  cursor: pointer;
 }
 
 .menu {
@@ -543,7 +544,6 @@ select {
 .testimonials__box {
   position: absolute;
   background-color: #ffffff;
-  border-radius: 8px;
   padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;

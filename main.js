@@ -49,7 +49,6 @@ const slider = function () {
   };
   // Next slide
   const nextSlide = function () {
-    clearInterval(automaticPlay);
     if (curSlide === maxSlide - 1) {
       curSlide = 0;
     } else {
@@ -67,12 +66,6 @@ const slider = function () {
     goToSlide(curSlide);
   };
   goToSlide(0);
-
-  const automaticPlay = () => {
-    setInterval(nextSlide, 5000);
-  };
-  automaticPlay();
-
   btnRight.addEventListener("click", nextSlide);
   btnLeft.addEventListener("click", prevSlide);
 };
