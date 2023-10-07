@@ -70,3 +70,29 @@ const slider = function () {
   btnLeft.addEventListener("click", prevSlide);
 };
 slider();
+
+// INTERSECTION OBSERVER
+
+// SELECTIONS
+
+const heroImg = document.querySelector(".hero-img");
+const sectionHeadings = Array.from(
+  document.querySelectorAll(".section-heading")
+);
+const heroHeading = document.querySelector(".hero-heading");
+const allEntries = [heroImg, heroHeading, ...sectionHeadings];
+// OPTIONS
+let options = {
+  threshold: 1.0,
+};
+
+const observer = new IntersectionObserver((entries, options) => {
+  entries.forEach((entry) => {
+    console.log(entry);
+    if (entry.intersectionRatio > 0) {
+      heroImg.classList.add("hero-animation");
+    }
+  });
+});
+
+allEntries.forEach((entry) => observer.observe(entry));
