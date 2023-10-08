@@ -1,8 +1,24 @@
 const hamburgerToggle = document.querySelector(".hamburger-menu");
+console.log(hamburgerToggle);
 const menu = document.querySelector(".menu");
 const body = document.body;
 const navLinks = document.querySelectorAll(".nav_link");
-
+const navigation = document.querySelector(".navigation");
+const accordionContainer = document.querySelector(".accordion__boxes");
+const heroImg = document.querySelector(".hero-img");
+const sectionHeadings = Array.from(
+  document.querySelectorAll(".section-heading")
+);
+const heroHeading = document.querySelector(".hero-heading");
+const servicesSection = document.querySelector(".services");
+const footer = document.querySelector("#footer");
+const headerSection = document.querySelector("#home");
+const headerParagraph = document.querySelector(".hero-description");
+const heroBtns = document.querySelector(".hero-btns");
+const servicesCards = Array.from(document.querySelectorAll(".services__card"));
+const servicesImg = document.querySelector(".services__img");
+console.log(servicesImg);
+console.log(servicesCards);
 // OPEN/CLOSE Drawer
 const toggleDrawer = () => {
   const expanded =
@@ -20,8 +36,6 @@ navLinks.forEach((link) => {
 });
 
 // ACCORDION
-
-const accordionContainer = document.querySelector(".accordion__boxes");
 
 // Event Delegation
 accordionContainer.addEventListener("click", (e) => {
@@ -75,22 +89,36 @@ slider();
 
 // SELECTIONS
 
-const heroImg = document.querySelector(".hero-img");
-const sectionHeadings = Array.from(
-  document.querySelectorAll(".section-heading")
-);
-const heroHeading = document.querySelector(".hero-heading");
-const allEntries = [heroImg, heroHeading, ...sectionHeadings];
+const allEntries = [
+  heroImg,
+  heroHeading,
+  navigation,
+  servicesSection,
+  footer,
+  hamburgerToggle,
+  headerParagraph,
+  heroBtns,
+  servicesImg,
+  ...sectionHeadings,
+  ...servicesCards,
+];
 // OPTIONS
+let opt = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0.5,
+};
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    console.log(entry);
     if (entry.isIntersecting) {
-      heroImg.classList.add("hero-animation");
+      entry.target.classList.add(`${entry.target.dataset.anim}`);
     }
+    // if (!entry.isIntersecting) {
+    //   entry.target.classList.remove(`${entry.target.dataset.anim}`);
+    // }
   });
-});
+}, opt);
 
 allEntries.forEach((entry) => observer.observe(entry));
 

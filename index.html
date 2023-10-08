@@ -26,7 +26,11 @@
           /></a>
 
           <div class="mobile-navigation">
-            <div class="hamburger-menu" aria-expanded="false"></div>
+            <div
+              class="hamburger-menu"
+              aria-expanded="false"
+              data-anim="rotate"
+            ></div>
           </div>
         </nav>
         <ul class="menu">
@@ -47,17 +51,21 @@
             src="src/imgs/hero-img-svg.svg"
             class="hero-img"
             alt="hero-img"
+            data-anim="fade-in"
           />
           <div class="text-center">
-            <h1 class="heading-3 hero-heading">
+            <h1 class="heading-3 hero-heading" data-anim="to-right">
               Car Repair and <span>Maintenance</span>
             </h1>
           </div>
-          <p class="hero-description text-center">
+          <p class="hero-description text-center" data-anim="to-left">
             Get your car back on the road with our expert repair services. We’ll
             solve your problem big or small.
           </p>
-          <div class="hero-btns flex justify-center items-center">
+          <div
+            class="hero-btns flex justify-center items-center"
+            data-anim="to-up"
+          >
             <button class="btn btn-light">Book Now</button>
             <button class="btn btn-outline">Contact Us</button>
           </div>
@@ -67,9 +75,11 @@
     <!-- SERVICES -->
     <section id="service" class="services">
       <div class="wrapper">
-        <h2 class="services__header section-heading">Services</h2>
+        <h2 class="services__header section-heading" data-anim="section-hidden">
+          Services
+        </h2>
         <div class="services__cards">
-          <div class="services__card">
+          <div class="services__card" data-anim="to-right">
             <div class="services__card-img-background">
               <img
                 src="/src/imgs/general-maintenance.png"
@@ -87,7 +97,7 @@
             </button>
           </div>
           <img src="/src/imgs/services-car.png" alt="" style="display: none" />
-          <div class="services__card">
+          <div class="services__card" data-anim="to-left">
             <div class="services__card-img-background">
               <img
                 src="/src/imgs/tyre-icon.png"
@@ -108,8 +118,9 @@
             src="src/imgs/services-car.png"
             alt="services icon"
             class="services__img"
+            data-anim="fade-in"
           />
-          <div class="services__card">
+          <div class="services__card" data-anim="to-left">
             <div class="services__card-img-background">
               <img
                 src="/src/imgs/repair-car-icon.png"
@@ -126,12 +137,13 @@
               Read More
             </button>
           </div>
-          <div class="services__card">
+          <div class="services__card" data-anim="to-right">
             <div class="services__card-img-background">
               <img
                 src="/src/imgs/car-tune-icon.png"
                 alt="Car Tune Icon"
                 class="services__card-img"
+                data-anim="fade-in"
               />
             </div>
             <h3 class="services__card-title">Tune Up</h3>
@@ -143,7 +155,7 @@
               Read More
             </button>
           </div>
-          <div class="services__card">
+          <div class="services__card" data-anim="to-right">
             <div class="services__card-img-background">
               <img
                 src="/src/imgs/engine-car-icon.png"

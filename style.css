@@ -32,8 +32,28 @@
   background: url("/src/imgs/close.png") no-repeat !important;
 }
 
-.hero-animation {
+.to-left {
   animation: toLeft 1s forwards ease-in-out;
+}
+
+.to-right {
+  animation: toRight 1s forwards ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards ease-in-out;
+}
+
+.to-up {
+  animation: toUp 1s forwards ease-in-out;
+}
+
+.rotate {
+  animation: torotate 0.7s forwards ease-in-out;
+}
+
+.section-hidden {
+  animation: sectionHidden 0.7s forwards ease-in-out;
 }
 
 @keyframes toLeft {
@@ -44,6 +64,54 @@
   to {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+@keyframes toRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes toUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@keyframes torotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+@keyframes sectionHidden {
+  from {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }
 /* Box sizing rules */
@@ -382,6 +450,21 @@ select {
   background: white;
   padding: 1.1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  transition: all 0.3s ease-in-out;
+}
+
+.fixed {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+
+.opacity-0 {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
 }
 
 .mobile-navigation .hamburger-menu {

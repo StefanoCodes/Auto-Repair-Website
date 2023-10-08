@@ -1,7 +1,21 @@
-.hero-animation {
+.to-left {
   animation: toLeft 1s forwards ease-in-out;
 }
-
+.to-right {
+  animation: toRight 1s forwards ease-in-out;
+}
+.fade-in {
+  animation: fadeIn 1s forwards ease-in-out;
+}
+.to-up {
+  animation: toUp 1s forwards ease-in-out;
+}
+.rotate {
+  animation: torotate 0.7s forwards ease-in-out;
+}
+.section-hidden {
+  animation: sectionHidden 0.7s forwards ease-in-out;
+}
 @keyframes toLeft {
   from {
     opacity: 0;
@@ -10,5 +24,57 @@
   to {
     opacity: 1;
     transform: translateX(0%);
+  }
+}
+@keyframes toRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes toUp {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+@keyframes torotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+@keyframes sectionHidden {
+  from {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0rem);
   }
 }
