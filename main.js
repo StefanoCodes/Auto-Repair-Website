@@ -4,21 +4,7 @@ const menu = document.querySelector(".menu");
 const body = document.body;
 const navLinks = document.querySelectorAll(".nav_link");
 const navigation = document.querySelector(".navigation");
-const accordionContainer = document.querySelector(".accordion__boxes");
-const heroImg = document.querySelector(".hero-img");
-const sectionHeadings = Array.from(
-  document.querySelectorAll(".section-heading")
-);
-const heroHeading = document.querySelector(".hero-heading");
-const servicesSection = document.querySelector(".services");
-const footer = document.querySelector("#footer");
-const headerSection = document.querySelector("#home");
-const headerParagraph = document.querySelector(".hero-description");
-const heroBtns = document.querySelector(".hero-btns");
-const servicesCards = Array.from(document.querySelectorAll(".services__card"));
-const servicesImg = document.querySelector(".services__img");
-console.log(servicesImg);
-console.log(servicesCards);
+
 // OPEN/CLOSE Drawer
 const toggleDrawer = () => {
   const expanded =
@@ -36,6 +22,8 @@ navLinks.forEach((link) => {
 });
 
 // ACCORDION
+
+const accordionContainer = document.querySelector(".accordion__boxes");
 
 // Event Delegation
 accordionContainer.addEventListener("click", (e) => {
@@ -88,6 +76,19 @@ slider();
 // INTERSECTION OBSERVER
 
 // SELECTIONS
+
+const heroImg = document.querySelector(".hero-img");
+const sectionHeadings = Array.from(
+  document.querySelectorAll(".section-heading")
+);
+const heroHeading = document.querySelector(".hero-heading");
+const servicesSection = document.querySelector(".services");
+const footer = document.querySelector("#footer");
+const headerSection = document.querySelector("#home");
+const headerParagraph = document.querySelector(".hero-description");
+const heroBtns = document.querySelector(".hero-btns");
+const servicesCards = Array.from(document.querySelectorAll(".services__card"));
+const servicesImg = document.querySelector(".services__img");
 
 const allEntries = [
   heroImg,
