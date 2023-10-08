@@ -89,7 +89,7 @@ let options = {
 const observer = new IntersectionObserver((entries, options) => {
   entries.forEach((entry) => {
     console.log(entry);
-    if (entry.intersectionRatio > 0) {
+    if (entry.isIntersecting) {
       heroImg.classList.add("hero-animation");
     }
   });
