@@ -82,11 +82,8 @@ const sectionHeadings = Array.from(
 const heroHeading = document.querySelector(".hero-heading");
 const allEntries = [heroImg, heroHeading, ...sectionHeadings];
 // OPTIONS
-let options = {
-  threshold: 1.0,
-};
 
-const observer = new IntersectionObserver((entries, options) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
     if (entry.isIntersecting) {
@@ -96,3 +93,7 @@ const observer = new IntersectionObserver((entries, options) => {
 });
 
 allEntries.forEach((entry) => observer.observe(entry));
+
+// TODO:
+// add dataset attribute to the elements we want to animate
+// accoding to each dataset we will use that as the class name to add the animation
