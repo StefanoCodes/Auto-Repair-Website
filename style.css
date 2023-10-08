@@ -33,7 +33,7 @@
 }
 
 .hero-animation {
-  animation: toLeft 1s forwards ease-in-out;
+  animation: toLeft 3s forwards ease-in-out;
 }
 
 @keyframes toLeft {
