@@ -1,5 +1,7 @@
+import Lenis from "@studio-freight/lenis";
+import { animate } from "motion";
+
 const hamburgerToggle = document.querySelector(".hamburger-menu");
-console.log(hamburgerToggle);
 const menu = document.querySelector(".menu");
 const body = document.body;
 const navLinks = document.querySelectorAll(".nav_link");
@@ -73,7 +75,22 @@ const slider = function () {
 };
 slider();
 
-// INTERSECTION OBSERVER
+// SMOOTH SCROLL
+
+const lenis = new Lenis();
+
+lenis.on("scroll", (e) => {
+  console.log(e);
+});
+
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
+
+// ANIMATIONS
 
 // SELECTIONS
 
@@ -103,3 +120,5 @@ const allEntries = [
   ...sectionHeadings,
   ...servicesCards,
 ];
+
+animate(heroImg, { transform: "translateY(10px)" }, { duration: 0.5 });

@@ -351,7 +351,6 @@ select {
   margin: 1.5rem 0;
   line-height: clamp(5rem, 8vw, 5.5rem);
   transition: all 0.5s ease-in-out;
-  transform: translateX(0%);
 }
 .hero-heading span {
   position: relative;
