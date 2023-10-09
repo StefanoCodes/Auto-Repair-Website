@@ -1,5 +1,4 @@
-import Lenis from "@studio-freight/lenis";
-import { animate } from "motion";
+import { animate, stagger } from "motion";
 
 const hamburgerToggle = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".menu");
@@ -75,21 +74,6 @@ const slider = function () {
 };
 slider();
 
-// SMOOTH SCROLL
-
-const lenis = new Lenis();
-
-lenis.on("scroll", (e) => {
-  console.log(e);
-});
-
-function raf(time) {
-  lenis.raf(time);
-  requestAnimationFrame(raf);
-}
-
-requestAnimationFrame(raf);
-
 // ANIMATIONS
 
 // SELECTIONS
@@ -107,18 +91,42 @@ const heroBtns = document.querySelector(".hero-btns");
 const servicesCards = Array.from(document.querySelectorAll(".services__card"));
 const servicesImg = document.querySelector(".services__img");
 
-const allEntries = [
+animate(
   heroImg,
+  // setting keyframes like this we are indicating where to go from and where to end at
+  { opacity: ["0", "1"], transform: ["translateY(-100%)", "none"] },
+  {
+    duration: 1,
+    easing: "ease-in-out",
+  }
+);
+animate(
   heroHeading,
-  navigation,
-  servicesSection,
-  footer,
-  hamburgerToggle,
+  // setting keyframes like this we are indicating where to go from and where to end at
+  { transform: ["translateX(-100%)", "none"], filter: ["blur(10px)", "none"] },
+  {
+    duration: 1,
+    easing: "ease-in-out",
+    delay: "0.5",
+  }
+);
+animate(
   headerParagraph,
+  // setting keyframes like this we are indicating where to go from and where to end at
+  { transform: ["translateX(100%)", "none"], filter: ["blur(10px)", "none"] },
+  {
+    duration: 1,
+    easing: "ease-in-out",
+    delay: "1",
+  }
+);
+animate(
   heroBtns,
-  servicesImg,
-  ...sectionHeadings,
-  ...servicesCards,
-];
-
-animate(heroImg, { transform: "translateY(10px)" }, { duration: 0.5 });
+  // setting keyframes like this we are indicating where to go from and where to end at
+  { transform: ["translateY(50px)", "none"], opacity: ["0", "1"] },
+  {
+    duration: 1,
+    easing: "ease-in-out",
+    delay: "1.4",
+  }
+);
