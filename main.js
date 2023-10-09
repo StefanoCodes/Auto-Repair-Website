@@ -103,26 +103,3 @@ const allEntries = [
   ...sectionHeadings,
   ...servicesCards,
 ];
-// OPTIONS
-let opt = {
-  root: null,
-  rootMargin: "0px",
-  threshold: 0.5,
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add(`${entry.target.dataset.anim}`);
-    }
-    // if (!entry.isIntersecting) {
-    //   entry.target.classList.remove(`${entry.target.dataset.anim}`);
-    // }
-  });
-}, opt);
-
-allEntries.forEach((entry) => observer.observe(entry));
-
-// TODO:
-// add dataset attribute to the elements we want to animate
-// accoding to each dataset we will use that as the class name to add the animation

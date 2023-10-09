@@ -32,88 +32,26 @@
   background: url("/src/imgs/close.png") no-repeat !important;
 }
 
-.to-left {
-  animation: toLeft 1s forwards ease-in-out;
-}
-
-.to-right {
-  animation: toRight 1s forwards ease-in-out;
+.section-hidden {
+  opacity: 0 !important;
+  transform: translateY(8rem) !important;
 }
 
 .fade-in {
-  animation: fadeIn 1s forwards ease-in-out;
+  opacity: 0 !important;
+  filter: blur(5px);
 }
 
-.to-up {
-  animation: toUp 1s forwards ease-in-out;
+.to-left {
+  opacity: 0 !important;
+  transform: translateX(100%) !important;
 }
 
-.rotate {
-  animation: torotate 0.7s forwards ease-in-out;
+.to-right {
+  opacity: 0 !important;
+  transform: translateX(-100%) !important;
 }
 
-.section-hidden {
-  animation: sectionHidden 0.7s forwards ease-in-out;
-}
-
-@keyframes toLeft {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes toRight {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes toUp {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%);
-  }
-}
-@keyframes torotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(180deg);
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    filter: blur(10px);
-  }
-  to {
-    opacity: 1;
-    filter: blur(0px);
-  }
-}
-@keyframes sectionHidden {
-  from {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0rem);
-  }
-}
 /* Box sizing rules */
 *,
 *::before,
@@ -221,6 +159,9 @@ select {
 .section-heading {
   font-size: clamp(3.2rem, 10vw, 4rem);
   text-transform: uppercase;
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }
 
 .service-description {
@@ -409,6 +350,8 @@ select {
   display: inline-block;
   margin: 1.5rem 0;
   line-height: clamp(5rem, 8vw, 5.5rem);
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0%);
 }
 .hero-heading span {
   position: relative;
@@ -426,6 +369,7 @@ select {
 
 .hero-img {
   margin: 0 auto;
+  transition: all 0.5s ease-in-out;
 }
 
 .highlight-blue {
