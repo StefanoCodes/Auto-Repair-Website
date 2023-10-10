@@ -103,21 +103,21 @@ animate(
 animate(
   heroHeading,
   // setting keyframes like this we are indicating where to go from and where to end at
-  { transform: ["translateX(-100%)", "none"], filter: ["blur(10px)", "none"] },
+  { transform: ["translateX(-200%)", "none"], filter: ["blur(10px)", "none"] },
   {
-    duration: 1,
+    duration: 1.4,
     easing: "ease-in-out",
-    delay: "0.5",
+    delay: "0.3",
   }
 );
 animate(
   headerParagraph,
   // setting keyframes like this we are indicating where to go from and where to end at
-  { transform: ["translateX(100%)", "none"], filter: ["blur(10px)", "none"] },
+  { transform: ["translateX(200%)", "none"], filter: ["blur(10px)", "none"] },
   {
-    duration: 1,
+    duration: 1.5,
     easing: "ease-in-out",
-    delay: "1",
+    delay: "0.6",
   }
 );
 animate(

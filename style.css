@@ -322,10 +322,6 @@ select {
   margin-bottom: 3.9rem;
 }
 
-.hero-img {
-  background: no-repeat;
-}
-
 .hero-heading {
   display: inline-block;
   margin: 1.5rem 0;
@@ -346,9 +342,10 @@ select {
   z-index: -1;
 }
 
-.hero-img {
+.hero-image {
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
+  background: no-repeat;
 }
 
 .highlight-blue {
