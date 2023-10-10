@@ -1,4 +1,4 @@
-import { animate, stagger } from "motion";
+import { animate } from "motion";
 
 const hamburgerToggle = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".menu");
@@ -78,7 +78,7 @@ slider();
 
 // SELECTIONS
 
-const heroImg = document.querySelector(".hero-img");
+const heroImg = document.querySelector(".hero-image");
 const sectionHeadings = Array.from(
   document.querySelectorAll(".section-heading")
 );
@@ -90,7 +90,7 @@ const headerParagraph = document.querySelector(".hero-description");
 const heroBtns = document.querySelector(".hero-btns");
 const servicesCards = Array.from(document.querySelectorAll(".services__card"));
 const servicesImg = document.querySelector(".services__img");
-
+console.log(heroImg);
 animate(
   heroImg,
   // setting keyframes like this we are indicating where to go from and where to end at
