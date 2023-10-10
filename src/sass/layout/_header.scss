@@ -1,20 +1,27 @@
-#app {
-  padding: 1.1rem;
+@import "../sass-utils/variables";
+@import "../sass-utils/media-queries";
+
+.heading__container {
+  @include for-tablet() {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 3rem;
+    padding: $section-padding;
+  }
 }
-#home {
-  position: relative;
-}
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3.9rem;
-}
+
 .hero-heading {
   display: inline-block;
   margin: 1.5rem 0;
   line-height: clamp(5rem, 8vw, 5.5rem);
   transition: all 0.5s ease-in-out;
+  @include for-tablet() {
+    text-align: left;
+    @include for-tablet() {
+      line-height: 1.4;
+      font-size: clamp($fs-md-2, 5vw, $fs-l);
+    }
+  }
   span {
     position: relative;
   }
@@ -46,8 +53,18 @@
   font-weight: $fw-regular;
   margin-bottom: 2rem;
   padding: 0 6rem;
+  @include for-tablet() {
+    text-align: left;
+    padding: 0;
+    font-size: clamp($fs-3xs, 5vw, $fs-2xs);
+  }
 }
 .hero-btns {
   gap: 1.3rem;
   margin-bottom: 4.7rem;
+  @include for-tablet() {
+    gap: 2rem;
+    text-align: left;
+    justify-content: start;
+  }
 }

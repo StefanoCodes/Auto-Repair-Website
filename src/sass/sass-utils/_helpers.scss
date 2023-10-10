@@ -1,10 +1,15 @@
+@import "../sass-utils/media-queries";
+
 .wrapper {
-  max-width: 500px;
+  max-width: 50rem;
   margin: 0 auto;
   padding: 0 2.4rem;
-  // @media screen and (min-width: 768px) {
-  //   max-width: 720px;
-  // }
+
+  @include for-tablet() {
+    max-width: 90rem;
+    padding: 0 3.5rem;
+  }
+
   // @media screen and (min-width: 992px) {
   //   max-width: 960px;
   // }

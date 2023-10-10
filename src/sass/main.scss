@@ -4,6 +4,7 @@
 @import "./sass-utils/helpers";
 @import "./sass-utils/mixins";
 @import "./sass-utils/animations";
+@import "./sass-utils/media-queries";
 @import "./base/reset";
 @import "./base/typography";
 @import "./components/buttons";
@@ -11,7 +12,6 @@
 @import "./components/accordion";
 @import "./layout/grid";
 @import "./layout/header";
-@import "./layout/mobile-navigation";
 @import "./layout/navigation";
 @import "./layout/services";
 @import "./layout/about";
