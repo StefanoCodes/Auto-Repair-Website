@@ -90,7 +90,6 @@ const headerParagraph = document.querySelector(".hero-description");
 const heroBtns = document.querySelector(".hero-btns");
 const servicesCards = Array.from(document.querySelectorAll(".services__card"));
 const servicesImg = document.querySelector(".services__img");
-console.log(heroImg);
 
 const headings = [heroHeading, headerParagraph];
 animate(

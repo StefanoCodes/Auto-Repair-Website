@@ -562,7 +562,7 @@ select {
     border-right: 1px solid #ffffff;
   }
   .services__cards .services__card:hover {
-    background-color: #ffffff;
+    background-color: #ede5e5;
     transform: translateY(-1rem);
   }
 }
@@ -706,6 +706,9 @@ select {
     padding: 7.2rem 0;
   }
 }
+.testimonials h3 {
+  color: #ffffff;
+}
 .testimonials__container {
   height: 50rem;
   margin: 0 auto;
@@ -732,11 +735,35 @@ select {
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.testimonials__box-title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #ff8f81;
+  bottom: 5px;
+  left: 0;
+  z-index: -1;
+  border-radius: 2px;
+}
+@media (min-width: 48em) {
+  .testimonials__box-title {
+    font-size: 2.4rem;
+  }
 }
 .testimonials__box p {
   font-weight: 500;
   font-size: 1.2rem;
   margin-bottom: 2rem;
+}
+@media (min-width: 48em) {
+  .testimonials__box p {
+    font-size: 1.5rem;
+    padding: 0 9rem;
+  }
 }
 .testimonials__box-ratings {
   display: flex;
@@ -746,6 +773,11 @@ select {
 }
 .testimonials__box-ratings .ratings__name {
   font-size: 1.3rem;
+}
+@media (min-width: 48em) {
+  .testimonials__box-ratings .ratings__name {
+    font-size: 1.6rem;
+  }
 }
 .testimonials__box-ratings .ratings__stars {
   display: flex;

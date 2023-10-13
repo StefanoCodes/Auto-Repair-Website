@@ -7,6 +7,9 @@
   @include for-tablet() {
     padding: $section-padding-xl;
   }
+  h3 {
+    color: $white;
+  }
   &__container {
     height: 50rem;
     margin: 0 auto;
@@ -32,11 +35,31 @@
       font-size: $fs-2xs;
       font-weight: $fw-extra-bold;
       margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background: $primary-color;
+        bottom: 5px;
+        left: 0;
+        z-index: -1;
+        border-radius: 2px;
+      }
+      @include for-tablet() {
+        font-size: $fs-sm;
+      }
     }
     p {
       font-weight: $fw-medium;
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      @include for-tablet() {
+        font-size: 1.5rem;
+        padding: 0 9rem;
+      }
     }
     &-ratings {
       display: flex;
@@ -45,6 +68,9 @@
       align-items: center;
       .ratings__name {
         font-size: $fs-4xs;
+        @include for-tablet() {
+          font-size: $fs-base;
+        }
       }
 
       .ratings__stars {
