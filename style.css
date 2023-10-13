@@ -215,6 +215,11 @@ select {
   padding: 5.2rem 0;
   background-color: #7d85b3;
 }
+@media (min-width: 48em) {
+  .accordion {
+    padding: 7.2rem 0;
+  }
+}
 .accordion__heading {
   display: inline-block;
   margin-bottom: 2.5rem;
@@ -695,6 +700,11 @@ select {
 .testimonials {
   background-color: #ff8f81;
   padding: 5.2rem 0;
+}
+@media (min-width: 48em) {
+  .testimonials {
+    padding: 7.2rem 0;
+  }
 }
 .testimonials__container {
   height: 50rem;

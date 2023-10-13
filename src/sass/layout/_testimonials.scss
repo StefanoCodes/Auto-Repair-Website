@@ -1,9 +1,12 @@
 @import "../sass-utils/variables";
+@import "../sass-utils/mixins";
 
 .testimonials {
   background-color: $primary-color;
   padding: $section-padding;
-
+  @include for-tablet() {
+    padding: $section-padding-xl;
+  }
   &__container {
     height: 50rem;
     margin: 0 auto;

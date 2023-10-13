@@ -3,6 +3,9 @@
 .accordion {
   padding: 5.2rem 0;
   background-color: $secondary-color;
+  @include for-tablet() {
+    padding: $section-padding-xl;
+  }
 
   &__heading {
     display: inline-block;
