@@ -734,6 +734,11 @@ select {
   margin-top: 4rem;
   transition: transform 1s;
 }
+@media (min-width: 48em) {
+  .testimonials__box {
+    padding: 3rem 2rem;
+  }
+}
 .testimonials__box-content {
   text-align: center;
   padding-top: 2rem;
@@ -795,7 +800,11 @@ select {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+}
+@media (min-width: 48em) {
+  .testimonials .slider-controls {
+    margin-top: 3rem;
+  }
 }
 .testimonials .slider-icon {
   background: none;

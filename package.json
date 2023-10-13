@@ -13,6 +13,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^2.4.0",
     "@studio-freight/lenis": "^1.0.26",
     "motion": "^10.16.4"
   }

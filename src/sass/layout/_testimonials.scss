@@ -27,6 +27,9 @@
     min-height: 40rem;
     margin-top: 4rem;
     transition: transform 1s;
+    @include for-tablet() {
+      padding: 3rem 2rem;
+    }
     &-content {
       text-align: center;
       padding-top: 2rem;
@@ -85,7 +88,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    @include for-tablet() {
+      margin-top: 3rem;
+    }
   }
   .slider-icon {
     background: none;
