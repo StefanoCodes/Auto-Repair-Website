@@ -9,13 +9,10 @@
     max-width: 90rem;
     padding: 0 3.5rem;
   }
-
-  // @media screen and (min-width: 992px) {
-  //   max-width: 960px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   max-width: 1140px;
-  // }
+  @include for-desktop() {
+    max-width: 114rem;
+    padding: 0 4rem;
+  }
 }
 .text-uppercase {
   text-transform: uppercase;

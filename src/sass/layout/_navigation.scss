@@ -1,6 +1,11 @@
 @import "../sass-utils/variables";
 @import "../sass-utils/media-queries";
 
+// TODO: for desktop:
+// Add the number and center align the navigation like in the figma design
+// make font sizes bigger
+// change the box shadow?
+
 .navigation {
   position: relative;
   z-index: 1000;
@@ -14,6 +19,9 @@
   margin-bottom: 3.9rem;
   @include for-tablet() {
     padding: 1.5rem 3.5rem;
+  }
+  @include for-desktop() {
+    padding: 1.8rem 6rem;
   }
 }
 .mobile-navigation {

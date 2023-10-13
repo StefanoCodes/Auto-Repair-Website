@@ -9,6 +9,12 @@
     padding: 0 3.5rem;
   }
 }
+@media (min-width: 75em) {
+  .wrapper {
+    max-width: 114rem;
+    padding: 0 4rem;
+  }
+}
 
 .text-uppercase {
   text-transform: uppercase;
@@ -416,6 +422,11 @@ select {
 @media (min-width: 48em) {
   .navigation {
     padding: 1.5rem 3.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .navigation {
+    padding: 1.8rem 6rem;
   }
 }
 

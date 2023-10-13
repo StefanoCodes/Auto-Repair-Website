@@ -3,3 +3,8 @@
     @content;
   }
 }
+@mixin for-desktop {
+  @media (min-width: 75em) {
+    @content;
+  }
+}
