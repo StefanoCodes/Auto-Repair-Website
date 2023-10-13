@@ -1,4 +1,4 @@
-// VARIABLES
+@import "./mixins"; // VARIABLES
 // COLORS
 $primary-color: #ff8f81;
 $secondary-color: #7d85b3;
@@ -32,3 +32,4 @@ $ff-inter: "Inter", sans-serif;
 // padding
 
 $section-padding: 5.2rem 0;
+$section-padding-xl: 7.2rem 0;

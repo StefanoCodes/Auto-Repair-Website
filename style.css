@@ -318,7 +318,7 @@ select {
     display: flex;
     flex-direction: row-reverse;
     gap: 3rem;
-    padding: 5.2rem 0;
+    padding: 7.2rem 0;
   }
 }
 
@@ -516,6 +516,11 @@ select {
   padding: 5.2rem 0;
   text-align: center;
 }
+@media (min-width: 48em) {
+  .services {
+    padding: 7.2rem 0;
+  }
+}
 .services__header {
   text-transform: uppercase;
   color: #ffffff;
@@ -612,6 +617,11 @@ select {
 .about {
   padding: 5.2rem 0;
 }
+@media (min-width: 48em) {
+  .about {
+    padding: 7.2rem 0;
+  }
+}
 .about__heading {
   position: relative;
   display: inline-block;
@@ -631,11 +641,23 @@ select {
   max-width: 40rem;
   margin: 2.5rem auto;
 }
+@media (min-width: 48em) {
+  .about__img {
+    max-width: 50rem;
+  }
+}
 .about__description {
   text-align: center;
   font-size: 1.6rem;
   line-height: 2;
   margin-bottom: 3rem;
+}
+@media (min-width: 48em) {
+  .about__description {
+    max-width: 77rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
 }
 .about__socials {
   display: flex;

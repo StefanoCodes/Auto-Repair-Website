@@ -1,6 +1,9 @@
 @import "../sass-utils/variables";
 .about {
   padding: $section-padding;
+  @include for-tablet() {
+    padding: $section-padding-xl;
+  }
   &__heading {
     position: relative;
     display: inline-block;
@@ -15,16 +18,36 @@
       z-index: -1;
     }
   }
+  &__content {
+    @include for-tablet() {
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      // margin-top: 10rem;
+    }
+  }
   &__img {
     width: 100%;
     max-width: 40rem;
     margin: 2.5rem auto;
+    @include for-tablet() {
+      max-width: 50rem;
+    }
   }
   &__description {
     text-align: center;
     font-size: $fs-base;
     line-height: 2;
     margin-bottom: 3rem;
+    @include for-tablet() {
+      // text-align: left;
+      // flex: 1;
+      // font-size: $fs-3xs;
+      // line-height: 1.5;
+      max-width: 77rem;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+    }
   }
   &__socials {
     display: flex;

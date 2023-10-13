@@ -3,6 +3,9 @@
 .services {
   background-color: $secondary-color;
   padding: $section-padding;
+  @include for-tablet() {
+    padding: $section-padding-xl;
+  }
   text-align: center;
   &__header {
     text-transform: uppercase;
