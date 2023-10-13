@@ -318,6 +318,13 @@ select {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.wrench-icon {
+  position: absolute;
+  top: 15rem;
+  width: 4rem;
+  height: 4rem;
+}
+
 @media (min-width: 48em) {
   .heading__container {
     display: flex;

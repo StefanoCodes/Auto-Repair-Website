@@ -1,6 +1,13 @@
 @import "../sass-utils/variables";
 @import "../sass-utils/media-queries";
 
+.wrench-icon {
+  position: absolute;
+  top: 15rem;
+  width: 4rem;
+  height: 4rem;
+}
+
 .heading__container {
   @include for-tablet() {
     display: flex;
