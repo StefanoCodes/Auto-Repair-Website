@@ -33,9 +33,6 @@
     cursor: pointer;
     z-index: 9999;
   }
-  @include for-tablet() {
-    display: none;
-  }
 }
 .menu {
   background-color: $primary-color;
