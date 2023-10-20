@@ -24,7 +24,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 8rem;
-      gap: 5rem;
+      gap: 10rem;
     }
   }
   &__img {
@@ -56,10 +56,10 @@
   &__links-container {
     @include for-desktop() {
       display: flex;
-      justify-content: flex-start;
-      flex-direction: row-reverse;
+      justify-content: flex-end;
+      flex-direction: row;
       align-items: center;
-      gap: 8rem;
+      gap: 2rem;
     }
   }
   &__socials {
@@ -98,5 +98,4 @@
     opacity: 0.8;
     transform: translateY(-3px);
   }
-  // test
 }

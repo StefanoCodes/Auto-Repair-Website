@@ -8,3 +8,8 @@
     @content;
   }
 }
+@mixin for-desktop-lg {
+  @media (min-width: 90em) {
+    @content;
+  }
+}

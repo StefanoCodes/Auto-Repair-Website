@@ -15,6 +15,12 @@
     padding: 0 5rem;
   }
 }
+@media (min-width: 90em) {
+  .wrapper {
+    max-width: 140rem;
+    padding: 0 5.5rem;
+  }
+}
 
 .text-uppercase {
   text-transform: uppercase;
@@ -38,6 +44,11 @@
 
 .overflow-hidden {
   overflow: hidden;
+}
+@media (min-width: 48em) {
+  .overflow-hidden {
+    overflow: initial;
+  }
 }
 
 .close {
@@ -447,6 +458,12 @@ select {
     vertical-align: middle;
   }
 }
+@media (min-width: 90em) {
+  .hero-image {
+    flex: 1;
+    max-width: 40%;
+  }
+}
 
 .hero-description {
   font-size: 1.4rem;
@@ -570,6 +587,12 @@ select {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+.menu a:hover {
+  opacity: 0.75;
+  transform: translateY(-3px);
 }
 @media (min-width: 48em) {
   .menu a {
@@ -646,7 +669,16 @@ select {
     grid-template-areas: "Area-1 Area-1 Area-2 Area-2" "Area-3 Area-3 Area-4 Area-4" "Area-5 Area-5 Area-6 Area-6";
   }
 }
-.services__cards .services__card {
+@media (min-width: 90em) {
+  .services__cards {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 7rem;
+    grid-template-areas: "Area-1 Area-2 Area-3" "Area-4 Area-5 Area-6";
+  }
+}
+.services .services__card {
   padding: 3rem 5rem;
   display: flex;
   flex-direction: column;
@@ -658,56 +690,62 @@ select {
   border-radius: 8px;
 }
 @media (min-width: 48em) {
-  .services__cards .services__card {
+  .services .services__card {
     border: 0;
     border-right: 1px solid #ffffff;
   }
-  .services__cards .services__card:hover {
+  .services .services__card:hover {
     background-color: #ede5e5;
     transform: translateY(-1rem);
   }
 }
-.services__cards .services__card-img-background {
+@media (min-width: 90em) {
+  .services .services__card {
+    border: 0;
+  }
+}
+.services .services__card-img-background {
   display: inline-block;
   background-color: #ff8f81;
   border-radius: 50%;
   padding: 1.5rem;
   margin-bottom: 1rem;
 }
-.services__cards .services__card-img-background .services__card-img {
+.services .services__card-img-background .services__card-img {
   max-width: 6.4rem;
 }
-.services__cards .services__card-title {
+.services .services__card-title {
   font-size: 2.4rem;
   color: #000000;
   font-weight: 800;
   margin-bottom: 0.5rem;
 }
 @media (min-width: 75em) {
-  .services__cards .services__card-title {
+  .services .services__card-title {
     font-size: 3.2rem;
     margin-bottom: 0.75rem;
   }
 }
-.services__cards .services__card-description {
+.services .services__card-description {
   font-size: clamp(1.4rem, 8vw, 1.5rem);
   font-weight: 500;
 }
 @media (min-width: 75em) {
-  .services__cards .services__card-description {
+  .services .services__card-description {
     font-size: 1.6rem;
     max-width: 30rem;
   }
 }
-.services__cards .services__card-btn {
+.services .services__card-btn {
   font-size: 1.5rem;
   margin-top: 1.7rem;
 }
-.services .services__img {
+
+.services__img {
   max-width: 30rem;
 }
 @media (min-width: 48em) {
-  .services .services__img {
+  .services__img {
     max-width: 35rem;
   }
 }
@@ -719,17 +757,37 @@ select {
   .Area-2 {
     grid-area: Area-2;
   }
+  .Area-3 {
+    grid-area: Area-3;
+  }
+  .Area-4 {
+    grid-area: Area-4;
+  }
   .Area-5 {
     grid-area: Area-5;
   }
   .Area-6 {
     grid-area: Area-6;
   }
-  .Area-3 {
+}
+@media (min-width: 90em) {
+  .Area-1 {
+    grid-area: Area-1;
+  }
+  .Area-2 {
     grid-area: Area-3;
+  }
+  .Area-3 {
+    grid-area: Area-2;
   }
   .Area-4 {
     grid-area: Area-4;
+  }
+  .Area-5 {
+    grid-area: Area-5;
+  }
+  .Area-6 {
+    grid-area: Area-6;
   }
 }
 .about {
@@ -760,7 +818,7 @@ select {
     justify-content: space-between;
     align-items: center;
     margin-top: 8rem;
-    gap: 5rem;
+    gap: 10rem;
   }
 }
 .about__img {
@@ -794,10 +852,10 @@ select {
 @media (min-width: 75em) {
   .about__links-container {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
+    justify-content: flex-end;
+    flex-direction: row;
     align-items: center;
-    gap: 8rem;
+    gap: 2rem;
   }
 }
 .about__socials {
@@ -857,6 +915,14 @@ select {
   position: relative;
   overflow: hidden;
 }
+@media (min-width: 90em) {
+  .testimonials__container {
+    max-width: 105rem;
+    height: 60rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+}
 .testimonials__box {
   position: absolute;
   background-color: #ffffff;
@@ -872,6 +938,11 @@ select {
 @media (min-width: 48em) {
   .testimonials__box {
     padding: 3rem 2rem;
+  }
+}
+@media (min-width: 90em) {
+  .testimonials__box {
+    padding: 5rem 2rem;
   }
 }
 .testimonials__box-content {

@@ -1,5 +1,4 @@
 @import "../sass-utils/variables";
-@import "../sass-utils/media-queries";
 
 .navigation {
   position: relative;
@@ -73,6 +72,12 @@
     text-decoration: none;
     color: $white;
     font-size: $fs-3xs;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    &:hover {
+      opacity: 0.75;
+      transform: translateY(-3px);
+    }
     @include for-tablet() {
       color: #000000;
       font-weight: $fw-medium;

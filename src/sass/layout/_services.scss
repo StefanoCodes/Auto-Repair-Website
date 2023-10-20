@@ -26,63 +26,75 @@
         "Area-3 Area-3 Area-4 Area-4"
         "Area-5 Area-5 Area-6 Area-6";
     }
-    .services__card {
-      padding: 3rem 5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid $white;
-      border-bottom-right-radius: 30%;
-      transition: all 0.4s ease-in-out;
-      border-radius: 8px;
-      @include for-tablet() {
-        border: 0;
-        border-right: 1px solid $white;
-        &:hover {
-          background-color: #ede5e5;
-          transform: translateY(-1rem);
-        }
-      }
-      &-img-background {
-        display: inline-block;
-        background-color: $primary-color;
-        border-radius: 50%;
-        padding: 1.5rem;
-        margin-bottom: 1rem;
-        .services__card-img {
-          max-width: 6.4rem;
-        }
-      }
-      &-title {
-        font-size: $fs-sm;
-        color: $black;
-        font-weight: $fw-extra-bold;
-        margin-bottom: 0.5rem;
-        @include for-desktop() {
-          font-size: $fs-md;
-          margin-bottom: 0.75rem;
-        }
-      }
-      &-description {
-        font-size: clamp(1.4rem, 8vw, 1.5rem);
-        font-weight: $fw-medium;
-        @include for-desktop() {
-          font-size: $fs-base;
-          max-width: 30rem;
-        }
-      }
-      &-btn {
-        font-size: 1.5rem;
-        margin-top: 1.7rem;
-      }
+    @include for-desktop-lg() {
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 7rem;
+      grid-template-areas:
+        "Area-1 Area-2 Area-3"
+        "Area-4 Area-5 Area-6";
     }
   }
-  .services__img {
-    max-width: 30rem;
+  .services__card {
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $white;
+    border-bottom-right-radius: 30%;
+    transition: all 0.4s ease-in-out;
+    border-radius: 8px;
     @include for-tablet() {
-      max-width: 35rem;
+      border: 0;
+      border-right: 1px solid $white;
+      &:hover {
+        background-color: #ede5e5;
+        transform: translateY(-1rem);
+      }
     }
+    @include for-desktop-lg() {
+      border: 0;
+    }
+    &-img-background {
+      display: inline-block;
+      background-color: $primary-color;
+      border-radius: 50%;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      .services__card-img {
+        max-width: 6.4rem;
+      }
+    }
+    &-title {
+      font-size: $fs-sm;
+      color: $black;
+      font-weight: $fw-extra-bold;
+      margin-bottom: 0.5rem;
+      @include for-desktop() {
+        font-size: $fs-md;
+        margin-bottom: 0.75rem;
+      }
+    }
+    &-description {
+      font-size: clamp(1.4rem, 8vw, 1.5rem);
+      font-weight: $fw-medium;
+      @include for-desktop() {
+        font-size: $fs-base;
+        max-width: 30rem;
+      }
+    }
+    &-btn {
+      font-size: 1.5rem;
+      margin-top: 1.7rem;
+    }
+  }
+}
+.services__img {
+  max-width: 30rem;
+  @include for-tablet() {
+    max-width: 35rem;
   }
 }
 @include for-tablet() {
@@ -92,16 +104,36 @@
   .Area-2 {
     grid-area: Area-2;
   }
+  .Area-3 {
+    grid-area: Area-3;
+  }
+  .Area-4 {
+    grid-area: Area-4;
+  }
   .Area-5 {
     grid-area: Area-5;
   }
   .Area-6 {
     grid-area: Area-6;
   }
-  .Area-3 {
+}
+@include for-desktop-lg() {
+  .Area-1 {
+    grid-area: Area-1;
+  }
+  .Area-2 {
     grid-area: Area-3;
+  }
+  .Area-3 {
+    grid-area: Area-2;
   }
   .Area-4 {
     grid-area: Area-4;
+  }
+  .Area-5 {
+    grid-area: Area-5;
+  }
+  .Area-6 {
+    grid-area: Area-6;
   }
 }

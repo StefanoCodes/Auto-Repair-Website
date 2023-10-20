@@ -1,10 +1,15 @@
 import { animate } from "motion";
 
+// SELECTIONS
 const hamburgerToggle = document.querySelector(".hamburger-menu");
 const menu = document.querySelector(".menu");
 const body = document.body;
 const navLinks = document.querySelectorAll(".nav_link");
-const navigation = document.querySelector(".navigation");
+const heroImg = document.querySelector(".hero-image");
+const heroHeading = document.querySelector(".hero-heading");
+const headerParagraph = document.querySelector(".hero-description");
+const heroBtns = document.querySelector(".hero-btns");
+const headings = [heroHeading, headerParagraph];
 
 // OPEN/CLOSE Drawer
 const toggleDrawer = () => {
@@ -16,8 +21,6 @@ const toggleDrawer = () => {
   body.classList.toggle("overflow-hidden");
 };
 hamburgerToggle.addEventListener("click", toggleDrawer);
-// to avoid a user clicking in the drawer menu and then getting stuck since the overflow would be hidden so we are automatically closing the drawer upon a click
-// TODO: Implement Event delegation instead
 navLinks.forEach((link) => {
   link.addEventListener("click", toggleDrawer);
 });
@@ -35,7 +38,6 @@ accordionContainer.addEventListener("click", (e) => {
   parent.classList.toggle("active");
 });
 
-///////////////////////////////////////
 // Slider
 const slider = function () {
   const slides = document.querySelectorAll(".testimonials__box");
@@ -76,22 +78,6 @@ slider();
 
 // ANIMATIONS
 
-// SELECTIONS
-
-const heroImg = document.querySelector(".hero-image");
-const sectionHeadings = Array.from(
-  document.querySelectorAll(".section-heading")
-);
-const heroHeading = document.querySelector(".hero-heading");
-const servicesSection = document.querySelector(".services");
-const footer = document.querySelector("#footer");
-const headerSection = document.querySelector("#home");
-const headerParagraph = document.querySelector(".hero-description");
-const heroBtns = document.querySelector(".hero-btns");
-const servicesCards = Array.from(document.querySelectorAll(".services__card"));
-const servicesImg = document.querySelector(".services__img");
-const highlightEffect = document.querySelector(".highlight-effect");
-const headings = [heroHeading, headerParagraph];
 animate(
   heroImg,
   // setting keyframes like this we are indicating where to go from and where to end at

@@ -1,5 +1,4 @@
 @import "../sass-utils/variables";
-@import "../sass-utils/media-queries";
 
 .heading__container {
   @include for-tablet() {
@@ -56,6 +55,10 @@
     flex: 0.8;
     max-width: 45%;
     vertical-align: middle;
+  }
+  @include for-desktop-lg {
+    flex: 1;
+    max-width: 40%;
   }
 }
 
