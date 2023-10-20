@@ -59,10 +59,18 @@
         color: $black;
         font-weight: $fw-extra-bold;
         margin-bottom: 0.5rem;
+        @include for-desktop() {
+          font-size: $fs-md;
+          margin-bottom: 0.75rem;
+        }
       }
       &-description {
         font-size: clamp(1.4rem, 8vw, 1.5rem);
         font-weight: $fw-medium;
+        @include for-desktop() {
+          font-size: $fs-base;
+          max-width: 30rem;
+        }
       }
       &-btn {
         font-size: 1.5rem;
