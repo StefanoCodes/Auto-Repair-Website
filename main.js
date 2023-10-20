@@ -75,8 +75,7 @@ const slider = function () {
   btnLeft.addEventListener("click", prevSlide);
 };
 slider();
-
-// ANIMATIONS
+// ANIM
 
 animate(
   heroImg,
