@@ -294,8 +294,18 @@ select {
 .accordion__box.active .plus .line-vertical {
   border: 1px solid #f83f37;
 }
+@media (min-width: 75em) {
+  .accordion__box.active .plus .line-vertical {
+    border-width: 2px;
+  }
+}
 .accordion__box.active .plus .line-horizontal {
   border: 1px solid #f83f37;
+}
+@media (min-width: 75em) {
+  .accordion__box.active .plus .line-horizontal {
+    border-width: 2px;
+  }
 }
 .accordion__description {
   font-size: 1.4rem;
@@ -317,6 +327,12 @@ select {
   position: relative;
   transition: transform 250ms ease-in-out;
 }
+@media (min-width: 75em) {
+  .accordion .plus {
+    width: 50px;
+    height: 50px;
+  }
+}
 .accordion .plus .line {
   display: inline-block;
   background-color: #ff8f81;
@@ -330,6 +346,12 @@ select {
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 75em) {
+  .accordion .plus .line-vertical {
+    height: 20px;
+    border-width: 2px;
+  }
+}
 .accordion .plus .line-horizontal {
   width: 10.5px;
   border: 1.5px solid #0e1c4e;
@@ -338,6 +360,12 @@ select {
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all 0.3s ease-in-out;
+}
+@media (min-width: 75em) {
+  .accordion .plus .line-horizontal {
+    width: 20px;
+    border-width: 2px;
+  }
 }
 
 @keyframes rotate {

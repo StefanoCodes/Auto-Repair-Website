@@ -63,9 +63,15 @@
         animation-timing-function: ease-in;
         .line-vertical {
           border: 1px solid #f83f37;
+          @include for-desktop() {
+            border-width: 2px;
+          }
         }
         .line-horizontal {
           border: 1px solid #f83f37;
+          @include for-desktop() {
+            border-width: 2px;
+          }
         }
       }
     }
@@ -88,6 +94,10 @@
     cursor: pointer;
     position: relative;
     transition: transform 250ms ease-in-out;
+    @include for-desktop() {
+      width: 50px;
+      height: 50px;
+    }
     .line {
       display: inline-block;
       background-color: $primary-color;
@@ -100,6 +110,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all 0.3s ease-in-out;
+      @include for-desktop() {
+        height: 20px;
+        border-width: 2px;
+      }
     }
     .line-horizontal {
       width: 10.5px;
@@ -109,6 +123,10 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all 0.3s ease-in-out;
+      @include for-desktop() {
+        width: 20px;
+        border-width: 2px;
+      }
     }
   }
 }
