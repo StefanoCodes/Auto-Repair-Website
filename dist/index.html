@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,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" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FLATICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
+    <!-- SCRIPT -->
+    
+    <title>A-Z | Auto Repair</title>
+    <script type="module" crossorigin src="/assets/index-110a0be8.js"></script>
+    <link rel="stylesheet" href="/assets/index-46231636.css">
+  </head>
+  <body>
+    <!-- HOME  -->
+    <section id="home">
+      <header>
+        <nav class="navigation">
+          <a href="#home"
+            ><img src="data:image/png;base64,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" alt="app logo" width="36px"
+          /></a>
+
+          <div class="mobile-navigation">
+            <div class="hamburger-menu" aria-expanded="false"></div>
+          </div>
+
+          <ul class="menu">
+            <div class="list-items">
+              <li><a class="nav_link" href="#home">Home</a></li>
+              <li><a class="nav_link" href="#service">Services</a></li>
+              <li><a class="nav_link" href="#about-us">About</a></li>
+
+              <li><a class="nav_link" href="#testimonial">Testimonials</a></li>
+              <li>
+                <a class="nav_link cta" href="#footer">Contact Us</a>
+              </li>
+            </div>
+          </ul>
+          <a class="contact__number">+01 (555) 555-1234</a>
+        </nav>
+
+        <div class="wrapper">
+          <div class="heading__container">
+            <img
+              src="/assets/hero-car-img-mobile-50cdb99c.png"
+              class="hero-image"
+              alt=""
+            />
+            <div class="header__content">
+              <div class="text-center">
+                <h1 class="heading-3 hero-heading">
+                  Car Repair and
+                  <span class="highlight-effect">Maintenance</span>
+                </h1>
+              </div>
+              <p class="hero-description text-center">
+                Get your car back on the road with our expert repair services.
+                We’ll solve your problem big or small.
+              </p>
+              <div class="hero-btns flex justify-center items-center">
+                <button class="btn btn-light">Book Now</button>
+                <button class="btn btn-outline">Contact Us</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+    <!-- SERVICES -->
+    <section id="service" class="services">
+      <div class="wrapper">
+        <h2 class="services__header section-heading">Services</h2>
+        <div class="services__cards">
+          <div class="services__card Area-1">
+            <div class="services__card-img-background">
+              <img
+                src="data:image/png;base64,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"
+                alt="General Maintenance Icon"
+                class="services__card-img"
+              />
+            </div>
+            <h3 class="services__card-title">General Maintenance</h3>
+            <p class="services__card-description">
+              With every 1, 3 and 5 year service we offer a 148 point vehicle
+              check.
+            </p>
+            <button class="services__card-btn btn btn-outline">
+              Read More
+            </button>
+          </div>
+          <!-- <img src="/src/imgs/services-car.png" alt="" style="display: none" /> -->
+          <div class="services__card Area-2">
+            <div class="services__card-img-background">
+              <img
+                src="/assets/tyre-icon-949e3efe.png"
+                alt="Wheel Alignment Icon"
+                class="services__card-img"
+              />
+            </div>
+            <h3 class="services__card-title">Wheel Alignment</h3>
+            <p class="services__card-description">
+              With every 1, 3 and 5 year service we offer a 148 point vehicle
+              check.
+            </p>
+            <button class="services__card-btn btn btn-outline">
+              Read More
+            </button>
+          </div>
+          <img
+            src="/assets/services-car-f4d38837.png"
+            alt="services img"
+            class="services__img Area-3"
+          />
+          <div class="services__card Area-4">
+            <div class="services__card-img-background">
+              <img
+                src="data:image/png;base64,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"
+                alt="General Repair Icon"
+                class="services__card-img"
+              />
+            </div>
+            <h3 class="services__card-title">General Repair</h3>
+            <p class="services__card-description">
+              With every 1, 3 and 5 year service we offer a 148 point vehicle
+              check.
+            </p>
+            <button class="services__card-btn btn btn-outline">
+              Read More
+            </button>
+          </div>
+          <div class="services__card Area-5">
+            <div class="services__card-img-background">
+              <img
+                src="data:image/png;base64,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"
+                alt="Car Tune Icon"
+                class="services__card-img"
+              />
+            </div>
+            <h3 class="services__card-title">Tune Up</h3>
+            <p class="services__card-description">
+              With every 1, 3 and 5 year service we offer a 148 point vehicle
+              check.
+            </p>
+            <button class="services__card-btn btn btn-outline">
+              Read More
+            </button>
+          </div>
+          <div class="services__card Area-6">
+            <div class="services__card-img-background">
+              <img
+                src="data:image/png;base64,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"
+                alt="Engine Check"
+                class="services__card-img"
+              />
+            </div>
+            <h3 class="services__card-title">Engine Check</h3>
+            <p class="services__card-description">
+              With every 1, 3 and 5 year service we offer a 148 point vehicle
+              check.
+            </p>
+            <button class="services__card-btn btn btn-outline">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT US -->
+    <section id="about-us" class="about">
+      <div class="wrapper">
+        <div class="text-center">
+          <h2 class="section-heading about__heading">about us</h2>
+        </div>
+        <div class="about__content">
+          <img
+            src="/assets/about-us-bc738f5d.png"
+            alt="about us illustration"
+            class="about__img"
+          />
+          <p class="about__description">
+            Marshall Volvo offers outstanding customer service from eight
+            locations across England. All operate with the same dedication to
+            outstanding service, whether you’re in the market for your next
+            vehicle or simply require ongoing maintenance. We are located in
+            Bishop's Stortford, Cambridge, Derby, Grantham, Milton Keynes,
+            Nottingham, Peterborough and Welwyn Garden City.<br />
+            <br />
+            Head to your nearest outlet to browse the complete range of new
+            Volvo vehicles, from the smart V60 family hatchback to the luxurious
+            XC90 SUV. At each location we also stock a number of Approved Used
+            Volvo models, which you can browse online today. If you’re not sure
+            which model, engine and trim will suit you best, our expert team can
+            guide you by understanding your driving style, requirements and
+            budget.
+            <br />
+            <br />
+            We look forward to hearing from you.
+          </p>
+        </div>
+
+        <div class="about__links-container">
+          <div class="about__socials">
+            <div class="about__socials-icons">
+              <a href="https://facebook.com" target="_blank">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADdSURBVHgB7ZQ/DgFBFMY/bERUSDQSjWg0FCqhdAZHcAmdG6jEMdQ6nYJG5wJ6JBIi69uYhEzMeLs7jez+kl8ymzf73v5584B/J4PwDOiQVqlHb3RCT4hJgS6p/8UWHDA3JHdSoEyvlgJNxKSvJTzSLm3Quu1GDzIq2vWBbiEgCxl6t/kQYnuDoA1nak9Ni7XpSq0vdETvCEkH5p+qWzIlkX6iyNgKPCDHuNc2KnJ4tWee9uj0I7ajY7UORsXelMT78VRrtS5qsTMct2lk0gIJKCCdpkGfL/A+Nxskhic7hjgM4lslbQAAAABJRU5ErkJggg=="
+                  alt="facebook-icon"
+                  class="about__socials-icons-icon"
+                />
+              </a>
+              <a href="https://instagram.com" target="_blank">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJcSURBVHgBrZbJa1RBEMZrYhQF45K4r2hAQxTxJHjwIDoHBQ9e3BAEvShi/B8E0auIelLi7sWD3vUkCCIoop4SspJkErKvk/2r6e/lVTr9ZsgkBb95XdXVVfO6q7tfSuZLBbgB0mAfKKd9JVjr+Q6BCbb7QCP4Cl6ANgnIZTAAZpbIKLgdBU3xeRG8p94EXoE//GfDYFzCUgrKSDW4CqrYVwMea2MD6GX2j2C1FC8rwDPGGgN71HiHhhawRoqTW+AnuMAkvxnzvnZ+ovKwQBCdjp1gt7hFt9LDGP+p36X+vQQ/+2n8mxB4h7jX7gStoBl0g1pxlabyGmTBG+r/+MzFbmG2M4Hgxxg4qWL6wenAuCPszxVHO5W057QNZNinPlrG68VVzDm+cZSk0htbzb5pVbqonPScHtHewWS+aKI6+rzz+g5K/JZzJXrCOKQYWO3XJFnO0kf3iq3ASptgkI3jxqHcOGzPk2AVmKJflbHvjcaXJAxMyeIlOEYTTLJdauxa1xm2T0mypBljRNxhJ4FYBRe5AWxZGFvWSbzIb72+A2LWIFpMv563yvwyvSJxmZ5n4kJlmpudVsm/0TKSvNH0tA1NYbTRsjp/vTRuCjj+AEfFHRU9xq73Ri37vgTGbeZTjxT5zGwPJL/kO+x8qWHMb1bRi2Ypd0EkOiu/GPOeGjaKm0s1fBC3eYoVvQueSHx17oo2xyVx54nq9eCluCtTq2fKBNAjQQ+wMmPTMXpWHRJ3ZR6mXe/lpzb7cl36+idu2uxW9LPlusSfLRW0hz5bdPdm2bafLc/55jmZBZAbzsoGhGlPAAAAAElFTkSuQmCC"
+                  alt="instagram"
+                  class="about__socials-icons-icon"
+                />
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEQSURBVHgB7dS/6oFRGAfw5/ezcQFYJIMyKDIpFncgURaLWLkBRhfAoJTBFTApg8XAFSg2A7FhEPkT39P7Kk6c875nonzrM7ydc57zDO9ziH75tPwZ3OeDBoygDYmHtZDoYAlSJE4YdnDldGEMZdHhAZwg92bdAtMXxe8mUAXvuwv6XEcebj0oKM4cIEmC5LkDF+hBBgIQk1zQIElcesGrogpf8J/7rumdqmYh25Am9e4Zv+wCNgdNxeIzMjhHbtJ+tYPJCwpkMHbYKnRvJROJwtxg8TNESCGsoyJpky0qniWTseodsaHZC4pv6PmRk8YBdUlR5ggtfb80r34rJ8RJezXZZNtgBUsYQgfW9MvX5AZ5SKQxbg0KtgAAAABJRU5ErkJggg=="
+                  alt="twitter-icon"
+                  class="about__socials-icons-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-light about__btn about__btn">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Frequently Asked Questions -->
+    <section class="accordion" id="faq">
+      <div class="text-center">
+        <h2 class="accordion__heading section-heading">FAQ</h2>
+      </div>
+
+      <div class="wrapper">
+        <div class="accordion__container">
+          <div class="accordion__boxes">
+            <div class="accordion__box">
+              <div class="accordion__box-headings">
+                <h3 class="accordion__box-heading">
+                  How often should I change my car's oil?
+                </h3>
+                <div class="plus">
+                  <span class="line line-vertical"></span>
+                  <span class="line line-horizontal"></span>
+                </div>
+              </div>
+              <p class="accordion__description">
+                It is generally recommended to change your car's oil every 3,000
+                to 5,000 miles or as per the manufacturer's guidelines. However,
+                newer vehicles may have longer oil change intervals, so it's
+                best to refer to your car's owner's manual for the recommended
+                oil change frequency.
+              </p>
+            </div>
+            <div class="accordion__box">
+              <div class="accordion__box-headings">
+                <h3 class="accordion__box-heading">
+                  What are the signs of a failing battery?
+                </h3>
+                <div class="plus">
+                  <span class="line line-vertical"></span>
+                  <span class="line line-horizontal"></span>
+                </div>
+              </div>
+              <p class="accordion__description">
+                Signs of a failing battery include difficulty starting the car,
+                dimming headlights, a clicking sound when turning the ignition,
+                and electrical issues such as power windows or radio not working
+                properly.
+              </p>
+            </div>
+            <div class="accordion__box">
+              <div class="accordion__box-headings">
+                <h3 class="accordion__box-heading">
+                  How can I check my tire pressure?
+                </h3>
+                <div class="plus">
+                  <span class="line line-vertical"></span>
+                  <span class="line line-horizontal"></span>
+                </div>
+              </div>
+              <p class="accordion__description">
+                You can check your tire pressure using a tire pressure gauge.
+                Remove the valve cap from the tire, place the gauge on the valve
+                stem, and read the pressure displayed on the gauge. Refer to
+                your car's manual or the sticker on the driver's side door jamb
+                for the recommended tire pressure.
+              </p>
+            </div>
+            <div class="accordion__box">
+              <div class="accordion__box-headings">
+                <h3 class="accordion__box-heading">
+                  Why is my car's engine overheating?
+                </h3>
+                <div class="plus">
+                  <span class="line line-vertical"></span>
+                  <span class="line line-horizontal"></span>
+                </div>
+              </div>
+              <p class="accordion__description">
+                Engine overheating can be caused by a variety of factors,
+                including a faulty thermostat, coolant leak, radiator issues, or
+                a malfunctioning cooling fan. It is important to have the issue
+                diagnosed and repaired by a qualified mechanic to prevent
+                further damage to the engine.
+              </p>
+            </div>
+            <div class="accordion__box">
+              <div class="accordion__box-headings">
+                <h3 class="accordion__box-heading">
+                  How do I replace a flat tire?
+                </h3>
+                <div class="plus">
+                  <span class="line line-vertical"></span>
+                  <span class="line line-horizontal"></span>
+                </div>
+              </div>
+              <p class="accordion__description">
+                To replace a flat tire, you will need to use a jack to lift the
+                car, remove the lug nuts holding the wheel in place, remove the
+                flat tire, install the spare tire, tighten the lug nuts, and
+                lower the car. It is recommended to consult your car's owner's
+                manual for specific instructions and to practice changing a tire
+                in a safe environment before needing to do it on the side of the
+                road.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonial">
+      <h3 class="section-heading text-center">Feedback</h3>
+      <div class="wrapper">
+        <div class="testimonials__container">
+          <div class="testimonials__box">
+            <div class="testimonials__box-content">
+              <h4 class="testimonials__box-title">The Perfect Choice!</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                luctus tincidunt sem, et varius leo dictum at.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                luctus tincidunt sem, et varius leo dictum at. Suspendisse eu
+                molestie odio. Aenean eleifend congue neque, sed elementum urna
+                placerat sit amet. Aliquam erat volutpat. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+            </div>
+            <div class="testimonials__box-ratings">
+              <h5 class="ratings__name">
+                Rita Nicolas | GFO Digital Marketing
+              </h5>
+              <div class="ratings__stars">
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__box">
+            <div class="testimonials__box-content">
+              <h4 class="testimonials__box-title">Best Prices!</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                luctus tincidunt sem, et varius leo dictum at.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                luctus tincidunt sem, et varius leo dictum at. Suspendisse eu
+                molestie odio. Aenean eleifend congue neque, sed elementum urna
+                placerat sit amet. Aliquam erat volutpat. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+            </div>
+            <div class="testimonials__box-ratings">
+              <h5 class="ratings__name">Silvana Burton | CEO Little Step</h5>
+              <div class="ratings__stars">
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__box">
+            <div class="testimonials__box-content">
+              <h4 class="testimonials__box-title">Best Quality!</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                luctus tincidunt sem, et varius leo dictum at.
+                <br />
+                <br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                luctus tincidunt sem, et varius leo dictum at. Suspendisse eu
+                molestie odio. Aenean eleifend congue neque, sed elementum urna
+                placerat sit amet. Aliquam erat volutpat. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus.
+              </p>
+            </div>
+            <div class="testimonials__box-ratings">
+              <h5 class="ratings__name">Richard Vidmar | CFO Microsoft</h5>
+              <div class="ratings__stars">
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+                <lord-icon
+                  src="https://cdn.lordicon.com/gjjkpapc.json"
+                  trigger="in"
+                  state="in-dynamic"
+                  style="width: 25px; height: 25px"
+                >
+                </lord-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-icon slider-icon-left">
+            <i class="fi fi-rr-angle-double-small-left"></i>
+          </button>
+          <button class="slider-icon slider-icon-right">
+            <i class="fi fi-rr-angle-double-small-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <section class="contact" id="footer">
+      <img class="contact__logo" src="data:image/png;base64,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" alt="logo" />
+      <ul class="contact__nav">
+        <li><a>Company</a></li>
+        <li><a>Carrers</a></li>
+        <li><a>Privacy Policy</a></li>
+        <li><a>Terms</a></li>
+      </ul>
+      <div class="personal__links">
+        <span
+          >Developed by
+          <a
+            class="personal__links-name"
+            href="https://github.com/stefanovidmar2005"
+            target="_blank"
+            >Stefano</a
+          >
+          with ❤️</span
+        >
+        <span>Copyright © 2023 by Stefano Vidmar</span>
+      </div>
+    </section>
+    <script src="https://cdn.lordicon.com/lordicon-1.1.0.js" defer></script>
+  </body>
+</html>
