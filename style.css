@@ -223,7 +223,7 @@ select {
 }
 @media (min-width: 48em) {
   .accordion {
-    padding: 7.2rem 0;
+    padding: 7.5rem 0;
   }
 }
 .accordion__heading {
@@ -324,19 +324,12 @@ select {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.wrench-icon {
-  position: absolute;
-  top: 15rem;
-  width: 4rem;
-  height: 4rem;
-}
-
 @media (min-width: 48em) {
   .heading__container {
     display: flex;
     flex-direction: row-reverse;
     gap: 3rem;
-    padding: 7.2rem 0;
+    padding: 7.5rem 0;
   }
 }
 
@@ -357,18 +350,32 @@ select {
     font-size: clamp(4.5rem, 5vw, 4.8rem);
   }
 }
+@media (min-width: 48em) and (min-width: 75em) {
+  .hero-heading {
+    font-size: 6.4rem;
+  }
+}
 .hero-heading span {
   position: relative;
 }
 .hero-heading span::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 0%;
   height: 18px;
   background: #7d85b3;
   bottom: 4px;
   left: 0;
   z-index: -1;
+  transition: all 0.3s ease-in-out;
+  animation: highlightEffect 2s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+@media (min-width: 75em) {
+  .header__content {
+    flex: 1;
+  }
 }
 
 .hero-image {
@@ -376,9 +383,12 @@ select {
   transition: all 0.5s ease-in-out;
   background: no-repeat;
 }
-
-.highlight-blue {
-  background-color: #7d85b3;
+@media (min-width: 75em) {
+  .hero-image {
+    flex: 0.8;
+    max-width: 45%;
+    vertical-align: middle;
+  }
 }
 
 .hero-description {
@@ -394,6 +404,11 @@ select {
     font-size: clamp(1.4rem, 5vw, 1.8rem);
   }
 }
+@media (min-width: 75em) {
+  .hero-description {
+    max-width: 35rem;
+  }
+}
 
 .hero-btns {
   gap: 1.3rem;
@@ -407,6 +422,14 @@ select {
   }
 }
 
+@keyframes highlightEffect {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
 .navigation {
   position: relative;
   z-index: 1000;
@@ -544,7 +567,7 @@ select {
 }
 @media (min-width: 48em) {
   .services {
-    padding: 7.2rem 0;
+    padding: 7.5rem 0;
   }
 }
 .services__header {
@@ -645,7 +668,7 @@ select {
 }
 @media (min-width: 48em) {
   .about {
-    padding: 7.2rem 0;
+    padding: 7.5rem 0;
   }
 }
 .about__heading {
@@ -724,7 +747,7 @@ select {
 }
 @media (min-width: 48em) {
   .testimonials {
-    padding: 7.2rem 0;
+    padding: 7.5rem 0;
   }
 }
 .testimonials h3 {

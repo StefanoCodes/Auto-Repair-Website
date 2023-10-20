@@ -1,13 +1,6 @@
 @import "../sass-utils/variables";
 @import "../sass-utils/media-queries";
 
-.wrench-icon {
-  position: absolute;
-  top: 15rem;
-  width: 4rem;
-  height: 4rem;
-}
-
 .heading__container {
   @include for-tablet() {
     display: flex;
@@ -28,6 +21,9 @@
       line-height: 1.4;
       font-size: clamp($fs-md-2, 5vw, $fs-l);
     }
+    @include for-desktop() {
+      font-size: $fs-xl;
+    }
   }
   span {
     position: relative;
@@ -36,23 +32,31 @@
   span::after {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 0%;
     height: 18px;
     background: $secondary-color;
     bottom: 4px;
     left: 0;
     z-index: -1;
+    transition: all 0.3s ease-in-out;
+    animation: highlightEffect 2s ease-in-out forwards;
+    animation-delay: 2s;
   }
 }
-
+.header__content {
+  @include for-desktop() {
+    flex: 1;
+  }
+}
 .hero-image {
   margin: 0 auto;
   transition: all 0.5s ease-in-out;
   background: no-repeat;
-}
-
-.highlight-blue {
-  background-color: $secondary-color;
+  @include for-desktop() {
+    flex: 0.8;
+    max-width: 45%;
+    vertical-align: middle;
+  }
 }
 
 .hero-description {
@@ -65,6 +69,9 @@
     padding: 0;
     font-size: clamp($fs-3xs, 5vw, $fs-2xs);
   }
+  @include for-desktop() {
+    max-width: 35rem;
+  }
 }
 .hero-btns {
   gap: 1.3rem;
@@ -73,5 +80,14 @@
     gap: 2rem;
     text-align: left;
     justify-content: start;
+  }
+}
+
+@keyframes highlightEffect {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
   }
 }
