@@ -40,6 +40,7 @@
       margin-bottom: 2rem;
       position: relative;
       display: inline-block;
+
       &::after {
         content: "";
         position: absolute;
@@ -50,9 +51,16 @@
         left: 0;
         z-index: -1;
         border-radius: 2px;
+        @include for-desktop() {
+          opacity: 0.9;
+          bottom: 10px;
+        }
       }
       @include for-tablet() {
         font-size: $fs-sm;
+      }
+      @include for-desktop() {
+        font-size: $fs-md;
       }
     }
     p {
@@ -62,6 +70,9 @@
       @include for-tablet() {
         font-size: 1.5rem;
         padding: 0 9rem;
+      }
+      @include for-desktop() {
+        padding: 0 25rem;
       }
     }
     &-ratings {
