@@ -1,7 +1,7 @@
 @import "../sass-utils/variables";
 
 .accordion {
-  padding: 5.2rem 0;
+  padding: $section-padding;
   background-color: $secondary-color;
   @include for-tablet() {
     padding: $section-padding-xl;
@@ -12,6 +12,9 @@
     margin-bottom: 2.5rem;
     color: $white;
     letter-spacing: 2px;
+    @include for-desktop() {
+      margin-bottom: 4rem;
+    }
   }
   &__container {
     box-shadow: $primary-color 5px 5px, $primary-color 8px 8px;
@@ -31,6 +34,11 @@
     font-size: $fs-base;
     font-weight: $fw-bold;
     transition: all 0.3s ease-in-out;
+    border-bottom: 5px solid transparent;
+    border-radius: 8px;
+    @include for-desktop() {
+      font-size: $fs-xs;
+    }
   }
 
   &__box {
@@ -43,6 +51,10 @@
       .accordion__box-heading {
         font-size: $fs-2xs;
         font-weight: $fw-extra-bold;
+        @include for-desktop() {
+          font-size: $fs-sm;
+          border-bottom: 5px solid $secondary-color;
+        }
       }
       .plus {
         transform: rotate(45deg);
@@ -64,6 +76,10 @@
     max-height: 0px;
     transition: max-height 0.35s ease-in-out;
     overflow: hidden;
+    @include for-desktop() {
+      font-size: $fs-2xs;
+      max-width: 80rem;
+    }
   }
 
   .plus {

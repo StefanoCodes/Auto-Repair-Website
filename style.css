@@ -237,6 +237,11 @@ select {
   color: #ffffff;
   letter-spacing: 2px;
 }
+@media (min-width: 75em) {
+  .accordion__heading {
+    margin-bottom: 4rem;
+  }
+}
 .accordion__container {
   box-shadow: #ff8f81 5px 5px, #ff8f81 8px 8px;
   border-radius: 25px;
@@ -255,6 +260,13 @@ select {
   font-size: 1.6rem;
   font-weight: 700;
   transition: all 0.3s ease-in-out;
+  border-bottom: 5px solid transparent;
+  border-radius: 8px;
+}
+@media (min-width: 75em) {
+  .accordion__box-heading {
+    font-size: 2rem;
+  }
 }
 .accordion__box {
   padding: 1.9rem 1.6rem;
@@ -266,6 +278,12 @@ select {
 .accordion__box.active .accordion__box-heading {
   font-size: 1.8rem;
   font-weight: 800;
+}
+@media (min-width: 75em) {
+  .accordion__box.active .accordion__box-heading {
+    font-size: 2.4rem;
+    border-bottom: 5px solid #7d85b3;
+  }
 }
 .accordion__box.active .plus {
   transform: rotate(45deg);
@@ -285,6 +303,12 @@ select {
   max-height: 0px;
   transition: max-height 0.35s ease-in-out;
   overflow: hidden;
+}
+@media (min-width: 75em) {
+  .accordion__description {
+    font-size: 1.8rem;
+    max-width: 80rem;
+  }
 }
 .accordion .plus {
   width: 30px;
