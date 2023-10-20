@@ -19,11 +19,12 @@
     }
   }
   &__content {
-    @include for-tablet() {
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: center;
-      // margin-top: 10rem;
+    @include for-desktop() {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8rem;
+      gap: 5rem;
     }
   }
   &__img {
@@ -48,6 +49,18 @@
       margin: 0 auto;
       margin-bottom: 3rem;
     }
+    @include for-desktop() {
+      text-align: left;
+    }
+  }
+  &__links-container {
+    @include for-desktop() {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      align-items: center;
+      gap: 8rem;
+    }
   }
   &__socials {
     display: flex;
@@ -55,6 +68,10 @@
     align-items: center;
     margin-bottom: 4rem;
     gap: 4rem;
+    @include for-desktop() {
+      margin: 0;
+      gap: 2rem;
+    }
     &-description {
       font-size: $fs-xs;
       border-bottom: 5px solid $secondary-color;

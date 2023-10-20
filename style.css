@@ -228,7 +228,7 @@ select {
 }
 @media (min-width: 48em) {
   .accordion {
-    padding: 7.5rem 0;
+    padding: 10rem 0;
   }
 }
 .accordion__heading {
@@ -334,7 +334,7 @@ select {
     display: flex;
     flex-direction: row-reverse;
     gap: 3rem;
-    padding: 7.5rem 0;
+    padding: 10rem 0;
   }
 }
 
@@ -572,7 +572,7 @@ select {
 }
 @media (min-width: 48em) {
   .services {
-    padding: 7.5rem 0;
+    padding: 10rem 0;
   }
 }
 .services__header {
@@ -685,7 +685,7 @@ select {
 }
 @media (min-width: 48em) {
   .about {
-    padding: 7.5rem 0;
+    padding: 10rem 0;
   }
 }
 .about__heading {
@@ -701,6 +701,15 @@ select {
   bottom: 10px;
   left: 0;
   z-index: -1;
+}
+@media (min-width: 75em) {
+  .about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 5rem;
+  }
 }
 .about__img {
   width: 100%;
@@ -725,12 +734,32 @@ select {
     margin-bottom: 3rem;
   }
 }
+@media (min-width: 75em) {
+  .about__description {
+    text-align: left;
+  }
+}
+@media (min-width: 75em) {
+  .about__links-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 8rem;
+  }
+}
 .about__socials {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 4rem;
   gap: 4rem;
+}
+@media (min-width: 75em) {
+  .about__socials {
+    margin: 0;
+    gap: 2rem;
+  }
 }
 .about__socials-description {
   font-size: 2rem;
@@ -764,7 +793,7 @@ select {
 }
 @media (min-width: 48em) {
   .testimonials {
-    padding: 7.5rem 0;
+    padding: 10rem 0;
   }
 }
 .testimonials h3 {
