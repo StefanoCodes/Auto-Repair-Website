@@ -30,13 +30,23 @@ navLinks.forEach((link) => {
 const accordionContainer = document.querySelector(".accordion__boxes");
 
 // Event Delegation
-accordionContainer.addEventListener("click", (e) => {
-  e.preventDefault();
-  const target = e.target.closest(".plus");
-  if (!target) return;
-  const parent = target.parentElement.parentElement;
-  parent.classList.toggle("active");
-});
+
+const toggleAccordion = (container, elName) => {
+  container.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = e.target.closest(`${elName}`);
+    console.log(target);
+    if (!target) return;
+    if (target.classList.contains("accordion__box")) {
+      container.classList.toggle("active");
+      target.classList.toggle("active");
+    } else {
+      container.classList.toggle("active");
+    }
+  });
+};
+toggleAccordion(accordionContainer, ".plus");
+toggleAccordion(accordionContainer, ".accordion__box");
 
 // Slider
 const slider = function () {

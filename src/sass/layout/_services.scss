@@ -49,8 +49,8 @@
     @include for-tablet() {
       border: 0;
       border-right: 1px solid $white;
+      background-color: #ede5e5;
       &:hover {
-        background-color: #ede5e5;
         transform: translateY(-1rem);
       }
     }

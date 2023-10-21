@@ -254,7 +254,7 @@ select {
   }
 }
 .accordion__container {
-  box-shadow: #ff8f81 5px 5px, #ff8f81 8px 8px;
+  box-shadow: #ff8f81 5px 5px 5px;
   border-radius: 25px;
   background-color: #ffffff;
 }
@@ -282,6 +282,7 @@ select {
 .accordion__box {
   padding: 1.9rem 1.6rem;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .accordion__box.active .accordion__description {
   max-height: 25rem;
@@ -607,7 +608,6 @@ select {
 }
 @media (min-width: 48em) {
   .menu .cta {
-    border-bottom: 3px solid #7d85b3;
     transition: all 0.3s ease-in-out;
     padding: 0.45rem;
   }
@@ -624,6 +624,11 @@ select {
   color: #ffffff;
   border-top: 1px solid #7d85b3;
   padding-top: 2rem;
+  text-decoration: none;
+  transition: font-size 0.3s ease-in-out;
+}
+.contact__number:hover {
+  font-size: 1.8rem;
 }
 @media (min-width: 75em) {
   .contact__number {
@@ -693,9 +698,9 @@ select {
   .services .services__card {
     border: 0;
     border-right: 1px solid #ffffff;
+    background-color: #ede5e5;
   }
   .services .services__card:hover {
-    background-color: #ede5e5;
     transform: translateY(-1rem);
   }
 }
