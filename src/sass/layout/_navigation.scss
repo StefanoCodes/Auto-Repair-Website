@@ -5,14 +5,16 @@
   z-index: 1000;
   background: white;
   padding: 1.1rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 3.9rem;
+
   @include for-tablet() {
     padding: 1.5rem 3.5rem;
+    mix-blend-mode: multiply;
   }
   @include for-desktop() {
     padding: 1.8rem 6rem;

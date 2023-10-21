@@ -1,5 +1,13 @@
 @import "../sass-utils/variables";
+#home {
+  position: relative;
+}
 
+.wave {
+  position: absolute;
+  top: -3rem;
+  z-index: -100;
+}
 .heading__container {
   @include for-tablet() {
     display: flex;

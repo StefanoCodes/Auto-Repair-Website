@@ -55,6 +55,15 @@
   background: url("/src/imgs/close.png") no-repeat !important;
 }
 
+.hidden {
+  display: none;
+}
+@media (min-width: 48em) {
+  .hidden {
+    display: initial;
+  }
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -393,6 +402,16 @@ select {
   grid-template-columns: repeat(2, 1fr);
 }
 
+#home {
+  position: relative;
+}
+
+.wave {
+  position: absolute;
+  top: -3rem;
+  z-index: -100;
+}
+
 @media (min-width: 48em) {
   .heading__container {
     display: flex;
@@ -510,7 +529,6 @@ select {
   z-index: 1000;
   background: white;
   padding: 1.1rem;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   transition: all 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
@@ -520,6 +538,7 @@ select {
 @media (min-width: 48em) {
   .navigation {
     padding: 1.5rem 3.5rem;
+    mix-blend-mode: multiply;
   }
 }
 @media (min-width: 75em) {

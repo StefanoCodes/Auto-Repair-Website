@@ -43,3 +43,9 @@
 .close {
   background: url("/src/imgs/close.png") no-repeat !important;
 }
+.hidden {
+  display: none;
+  @include for-tablet() {
+    display: initial;
+  }
+}
