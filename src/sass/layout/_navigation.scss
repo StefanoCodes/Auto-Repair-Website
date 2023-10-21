@@ -6,7 +6,7 @@
   background: white;
   padding: 1.1rem;
   // box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  transition: all 0.3s ease-in-out;
+  transition: none 0.3s ease-in-out;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +25,7 @@
     background: url("/src/imgs/hamburger-menu-icon.png") no-repeat;
     aspect-ratio: 1;
     width: 2.5rem;
-    transition: all 0.5s;
+    transition: none 0.5s ease-in-out;
     cursor: pointer;
     z-index: 9999;
     @include for-tablet() {
@@ -46,6 +46,7 @@
   margin: 0;
   transition: transform 0.4s ease-in-out;
   transform: translateX(100%);
+  opacity: 0;
   margin-top: 6rem;
   border-top-left-radius: 10rem;
   @include for-tablet() {
@@ -58,6 +59,7 @@
     border-top-left-radius: 0;
     padding: 0;
     background: none;
+    opacity: 1;
   }
   .list-items {
     display: flex;
@@ -74,7 +76,7 @@
     text-decoration: none;
     color: $white;
     font-size: $fs-3xs;
-    transition: all 0.3s ease-in-out;
+    transition: none 0.3s ease-in-out;
     display: block;
     &:hover {
       opacity: 0.75;
@@ -91,7 +93,7 @@
     position: relative;
     @include for-tablet {
       // border-bottom: 3px solid $secondary-color;
-      transition: all 0.3s ease-in-out;
+      transition: none 0.3s ease-in-out;
       padding: 0.45rem;
 
       &:hover {
