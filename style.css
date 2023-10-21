@@ -410,6 +410,7 @@ select {
   position: absolute;
   top: -3rem;
   z-index: -100;
+  opacity: 0.1;
 }
 
 @media (min-width: 48em) {
