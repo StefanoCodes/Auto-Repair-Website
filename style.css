@@ -610,7 +610,7 @@ select {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.4rem;
-  transition: none 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   display: block;
 }
 .menu a:hover {
